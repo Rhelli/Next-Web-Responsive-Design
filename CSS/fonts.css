@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Shentox';
+  src: url('../Assets/Fonts/Shentox-Regular2.woff2') format('woff2'),
+      url('../Assets/Fonts/Shentox-Regular2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ARS Maquette Regular';
+  src: url('../Assets/Fonts/ars-maquette-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ARS Maquette Bold';
+  src: url('../Assets/Fonts/ars-maquette-bold-alt.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avalon';
+  src: url('../Assets/Fonts/avalon-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,47 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+body {
+  font: 
+    normal normal 16px/100% 'ARS Maquette Regular',
+    Helvetica,
+    Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Desktops & Other Large Devices */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* Laptops & Other Medium Devices */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* Phones & Smaller Devices */
+@media screen and (min-width: 480px), (max-width: 768px) {
+  
+}
+
+
+
