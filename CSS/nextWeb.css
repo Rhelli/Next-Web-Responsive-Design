@@ -215,21 +215,10 @@ nav {
 }
 
 /* FOOTER */
-.footer {
-  height: 258px;
-  background: #555;
-/* footer */
 footer {
   text-align: center;
   background-color: #131313;
   width: 100%;
-  height: 260px;
-  position: absolute;
-  bottom: 0;
-}
-
-.social-media-container {
-  background: #000;
 }
 
 .fl-social {
@@ -240,28 +229,6 @@ footer {
   list-style: none;
 }
 
-/* Laptops & Other Large Devices */
-@media screen and  (max-width: 1024px) {
-
-/* NAVBAR */
-
-
-/* Cover Stories/Articles Section */
-
-
-/* LATEST NEWS SECTION */
-
-
-/* LATEST FUNDING SECTION */
-
-
-/* TOPICS SECTION */
-
-
-/* LATEST DEALS SECTION */
-
-
-/* FOOTER */
 .fl-social a {
   height: 40px;
   background: #333;
@@ -277,77 +244,6 @@ footer {
   background-color: black;
 }
 
-/* Tablets & Medium Devices */
-@media screen and (max-width: 768px) {
-
-/* NAVBAR */
-
-
-/* Cover Stories/Articles Section */
-.coverArt-container {
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: auto;
-  max-height: 1000px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.coverArt-container > div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: auto;
-  width: 100%;
-}
-
-.coverArt-container > div > article {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  align-content: flex-end;
-  min-height: 30vh;
-}
-
-/* LATEST NEWS SECTION */
-
-
-/* LATEST FUNDING SECTION */
-
-
-/* TOPICS SECTION */
-
-
-/* LATEST DEALS SECTION */
-
-
-/* FOOTER */
-
-}
-
-/* Smartphones & Small Devices */
-@media screen and (max-width: 480px) {
-
-/* NAVBAR */
-
-
-/* Cover Stories/Articles Section */
-
-
-/* LATEST NEWS SECTION */
-
-
-/* LATEST FUNDING SECTION */
-
-
-/* TOPICS SECTION */
-
-
-/* LATEST DEALS SECTION */
 .fl-menu {
   display: flex;
   justify-content: space-around;
@@ -378,8 +274,6 @@ footer {
 }
 
 .footer-legal {
-  position: absolute;
-  bottom: 0px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -394,7 +288,6 @@ footer {
   height: 9px;
 }
 
-/* FOOTER */
 b {
   color: #f42;
 }
