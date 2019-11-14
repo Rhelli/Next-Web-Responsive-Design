@@ -221,17 +221,17 @@ nav {
 }
 /* MEDIA QUERIES */
 
-/* Desktops & Other Large Devices */
-@media screen and (min-width: 1200px) {
-
-}
-
-/* Laptops & Other Medium Devices */
+/* Laptops & Other Large Devices */
 @media screen and  (min-width: 1024px) {
 
 }
 
-/* Phones & Smaller Devices */
+/* Tablets & Medium Devices */
 @media screen and (min-width: 768px) {
+
+}
+
+/* Smartphones & Small Devices */
+@media screen and (min-width: 480px) {
 
 }
