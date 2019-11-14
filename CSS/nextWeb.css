@@ -223,16 +223,24 @@ nav {
 /* MEDIA QUERIES */
 
 /* Laptops & Other Large Devices */
-@media screen and  (min-width: 1024px) {
+@media screen and  (max-width: 1024px) {
 
 }
 
 /* Tablets & Medium Devices */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+
+.coverArt-container {
+  flex-flow: column nowrap;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
 
 }
 
 /* Smartphones & Small Devices */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 
 }
