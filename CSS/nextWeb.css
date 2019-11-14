@@ -22,25 +22,27 @@ body {
   box-sizing: inherit;
 }
 
-
-
-
-
 /* MEDIA QUERIES */
 
 /* Desktops & Other Large Devices */
 @media screen and (min-width: 1200px) {
 
+
+
 }
 
 /* Laptops & Other Medium Devices */
-@media screen and (min-width: 1024px) {
+@media screen and  (min-width: 1024px) {
+
+
 
 }
 
 /* Phones & Smaller Devices */
-@media screen and (min-width: 480px), (max-width: 768px) {
+@media screen and (min-width: 768px) {
+
   
+
 }
 
 
