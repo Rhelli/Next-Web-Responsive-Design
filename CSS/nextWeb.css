@@ -107,7 +107,6 @@ nav {
   width: auto;
 }
 
-/* LATEST-NEWS */
 .latest-news {
   display: flex;
   flex-flow: row wrap;
@@ -171,6 +170,48 @@ nav {
   max-width: 25%;
   margin: 10px 10px;
   border: 1px solid black;
+}
+
+/* TOPICS SECTION */
+.topics-section-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  background: rgb(246, 148, 255);
+  padding: 10px;
+  margin: 0;
+}
+
+.ts {
+  flex: 1 0 25%;
+  height: 300px;
+  max-width: calc(33.33% - 10px);
+  margin: 5px;
+  background: rgb(229, 90, 241);
+}
+
+/* LATEST DEALS SECTION */
+.latest-deals {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  background: rgb(179, 111, 111);
+  padding: 10px;
+  margin: 0;
+}
+
+.ld-item {
+  flex: 1 0 25%;
+  height: 200px;
+  max-width: calc(25% - 10px);
+  margin: 5px;
+  background: rgb(129, 41, 41);
 }
 
 /* FOOTER */
