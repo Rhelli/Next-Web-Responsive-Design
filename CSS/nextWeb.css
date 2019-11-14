@@ -39,31 +39,6 @@ nav {
   border: 2px solid black;
 }
 
-/* LATEST-NEWS */
-.latest-news {
-  margin: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background: rgb(179, 111, 111);
-}
-
-.ln-item {
-  flex: 1 0 calc(25% - 12px);
-  margin: 5px;
-  height: 250px;
-  width: 237px;
-  padding: 12px ;
-  background: rgb(129, 41, 41);
-}
-
-/* FOOTER */
-.footer {
-  height: 258px;
-  background: #555;
-}
-
 /* COVER STORIES/ARTICLES */
 .coverArt-container {
   display: flex;
@@ -111,31 +86,91 @@ nav {
   border: 1px solid black;
 }
 
+/* MAIN BODY WRAPPER */
+.body-wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 20px;
+  background-color: wheat;
+}
+
+.body-wrapper > section {
+  margin-bottom: 25px;
+}
+
 /* LATEST-NEWS-SECTION */
 .latest-news-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
+  width: auto;
 }
 
 /* LATEST-NEWS */
 .latest-news {
-  margin: 12px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 1176px;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
   background: rgb(179, 111, 111);
+  padding: 10px;
+  margin: 0;
 }
 
 .ln-item {
-  flex: 1 0 calc(25% - 12px);
+  flex: 1 0 25%;
+  height: 200px;
+  max-width: calc(25% - 10px);
   margin: 5px;
-  height: 250px;
-  width: 237px;
-  padding: 12px ;
   background: rgb(129, 41, 41);
+}
+
+/* FUNDING SECTION */
+.funding-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  background-color: tomato;
+  border: 1px solid black;
+}
+
+.funding-section header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: yellowgreen;
+  border: 1px solid black;
+}
+
+.fCard-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.fCard-container > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex: 1 0 calc(25% - 40px);
+  height: 287px;
+  max-width: 25%;
+  margin: 10px 10px;
+  border: 1px solid black;
 }
 
 /* FOOTER */
@@ -143,7 +178,6 @@ nav {
   height: 258px;
   background: #555;
 }
-
 /* MEDIA QUERIES */
 
 /* Desktops & Other Large Devices */
