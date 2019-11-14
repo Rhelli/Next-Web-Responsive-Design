@@ -218,9 +218,27 @@ nav {
 .footer {
   height: 258px;
   background: #555;
+/* footer */
+footer {
+  text-align: center;
+  background-color: #131313;
+  width: 100%;
+  height: 260px;
+  position: absolute;
+  bottom: 0;
 }
 
-/* MEDIA QUERIES */
+.social-media-container {
+  background: #000;
+}
+
+.fl-social {
+  display: flex;
+  width: 380px;
+  justify-content: space-around;
+  margin: 54px auto 44px auto;
+  list-style: none;
+}
 
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
@@ -244,7 +262,19 @@ nav {
 
 
 /* FOOTER */
+.fl-social a {
+  height: 40px;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 40px;
+}
 
+.fl-social a:hover {
+  background-color: black;
 }
 
 /* Tablets & Medium Devices */
@@ -318,7 +348,53 @@ nav {
 
 
 /* LATEST DEALS SECTION */
+.fl-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 335px;
+  margin: 0 auto;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: Shentox;
+}
 
+.fl-menu a:link,
+.fl-menu a:visited {
+  margin: 0 9px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.fl-menu a:hover {
+  color: white;
+}
+
+.footer-logo {
+  color: white;
+  width: 16px;
+  height: 16px;
+}
+
+.footer-legal {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 39px 0;
+  background: #000;
+}
+
+.logo-footer {
+  height: 9px;
+}
 
 /* FOOTER */
+b {
+  color: #f42;
 }
