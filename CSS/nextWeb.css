@@ -225,13 +225,35 @@ nav {
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
 
+/* NAVBAR */
+
+
+/* Cover Stories/Articles Section */
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
+
 }
 
 /* Tablets & Medium Devices */
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
 
+/* NAVBAR */
+
+
+/* Cover Stories/Articles Section */
 .coverArt-container {
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -261,12 +283,42 @@ nav {
   min-height: 30vh;
 }
 
+/* LATEST NEWS SECTION */
 
->>>>>>> coverArt-branch
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
 
 }
 
 /* Smartphones & Small Devices */
 @media screen and (max-width: 480px) {
 
+/* NAVBAR */
+
+
+/* Cover Stories/Articles Section */
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
 }
