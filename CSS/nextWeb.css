@@ -22,6 +22,10 @@ body {
   box-sizing: inherit;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* NAVBAR */
 nav {
   display: flex;
@@ -29,28 +33,8 @@ nav {
   width: 100vw;
   height: 50px;
   background-color: slateblue;
+  border: 2px solid black;
 }
-
-/* Nav Icon */
-nav div:first-child {
-  display: none;
-}
-
-nav div:first-child a img {
-  width: 105px;
-  height: 80px;
-}
-
-/* Top Nav (Black) Content */
-.black-nav {
-  display: inline;
-}
-
-.black-nav li {
-  float: right;
-}
-
-
 
 /* MEDIA QUERIES */
 
