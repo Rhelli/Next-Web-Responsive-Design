@@ -29,12 +29,18 @@ ul {
 /* NAVBAR */
 nav {
   display: flex;
-  flex-flow: row nowrap;
   width: 100vw;
   height: 50px;
   background-color: slateblue;
   border: 2px solid black;
 }
+
+/* footer */
+.footer {
+  height: 258px;
+  background: #555;
+}
+
 
 /* MEDIA QUERIES */
 
