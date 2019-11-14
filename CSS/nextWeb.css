@@ -5,13 +5,13 @@
 }
 
 html {
-  width: 100vw;
-  height: 100vh;
   box-sizing: border-box;
   background-color: #fff;
 }
 
 body {
+  max-width: 100vw;
+  height: auto;
   font: 
     normal normal 16px/100% 'ARS Maquette Regular',
     Helvetica,
@@ -33,7 +33,7 @@ ul {
 /* NAVBAR */
 nav {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 80px;
   background-color: slateblue;
   border: 2px solid black;
@@ -43,7 +43,7 @@ nav {
 .coverArt-container {
   display: flex;
   flex-flow: row nowrap;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   max-height: 560px;
   justify-content: center;
@@ -229,6 +229,40 @@ nav {
 
 /* Tablets & Medium Devices */
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
+=======
+
+.coverArt-container {
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  max-height: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.coverArt-container > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.coverArt-container > div > article {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-end;
+  min-height: 30vh;
+}
+
+
+>>>>>>> coverArt-branch
 
 }
 
