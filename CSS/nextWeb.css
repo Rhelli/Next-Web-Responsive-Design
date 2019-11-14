@@ -216,16 +216,23 @@ nav {
 
 /* FOOTER */
 footer {
-  text-align: center;
-  background-color: #131313;
   width: 100%;
+  background-color: #131313;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 300;  
 }
 
 .fl-social {
   display: flex;
-  width: 380px;
-  justify-content: space-around;
-  margin: 54px auto 44px auto;
+  margin: 60px auto 0 auto;
   list-style: none;
 }
 
@@ -234,8 +241,8 @@ footer {
   background: #333;
   border: 2px solid #333;
   border-radius: 50%;
-  padding: 10px;
-  margin: 10px;
+  padding: 11px;
+  margin: 7px;
   text-align: center;
   width: 40px;
 }
@@ -246,10 +253,9 @@ footer {
 
 .fl-menu {
   display: flex;
-  justify-content: space-around;
   width: 335px;
-  margin: 0 auto;
-  list-style: none;
+  margin: 40px auto;
+  justify-content: center;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: normal;
@@ -271,6 +277,7 @@ footer {
   color: white;
   width: 16px;
   height: 16px;
+  font-size: 1.3em;
 }
 
 .footer-legal {
