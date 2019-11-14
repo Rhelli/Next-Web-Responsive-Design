@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   width: 100vw;
   height: 100vh;
@@ -20,12 +26,6 @@ ul {
   padding-inline-start: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 ul {
   list-style-type: none;
 }
@@ -34,9 +34,56 @@ ul {
 nav {
   display: flex;
   width: 100vw;
-  height: 50px;
+  height: 80px;
   background-color: slateblue;
   border: 2px solid black;
+}
+
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 60vh;
+  max-height: 560px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: tan;
+  border: 1px solid black;
+}
+
+.coverArt-container > div:first-child {
+  display: inline-block;
+  flex: 1 0 65%;
+  height: 100%;
+  background-color: steelblue;
+  border: 1px solid black;
+}
+
+.coverArt-container div:last-child {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  flex: 1 0 35%;
+  height: 100%;
+  background-color: slategray;
+  border: 1px solid black;
+}
+
+.coverArt2 {
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: thistle;
+  border: 1px solid black;
+}
+
+.coverArt3 {
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: teal;
+  border: 1px solid black;
 }
 
 /* LATEST-NEWS-SECTION */
@@ -46,6 +93,7 @@ nav {
   justify-content: center;
 }
 
+/* LATEST-NEWS */
 .latest-news {
   margin: 12px;
   display: flex;
@@ -71,7 +119,6 @@ nav {
   background: #555;
 }
 
-
 /* MEDIA QUERIES */
 
 /* Desktops & Other Large Devices */
@@ -88,6 +135,3 @@ nav {
 @media screen and (min-width: 768px) {
 
 }
-
-
-
