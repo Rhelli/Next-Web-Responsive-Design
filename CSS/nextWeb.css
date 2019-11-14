@@ -39,13 +39,20 @@ nav {
   border: 2px solid black;
 }
 
-/* LATEST-NEWS */
+/* LATEST-NEWS-SECTION */
+.latest-news-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .latest-news {
   margin: 12px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  max-width: 1176px;
   background: rgb(179, 111, 111);
 }
 
