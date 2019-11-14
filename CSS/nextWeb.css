@@ -22,6 +22,18 @@ body {
   box-sizing: inherit;
 }
 
+ul {
+  list-style-type: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  background-color: slateblue;
+  border: 2px solid black;
+}
 
 /* footer */
 .footer {
@@ -38,13 +50,13 @@ body {
 }
 
 /* Laptops & Other Medium Devices */
-@media screen and (min-width: 1024px) {
+@media screen and  (min-width: 1024px) {
 
 }
 
 /* Phones & Smaller Devices */
-@media screen and (min-width: 480px), (max-width: 768px) {
-  
+@media screen and (min-width: 768px) {
+
 }
 
 
