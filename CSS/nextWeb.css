@@ -229,8 +229,6 @@ nav {
 
 /* Tablets & Medium Devices */
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
 
 .coverArt-container {
   flex-flow: column nowrap;
@@ -262,7 +260,6 @@ nav {
 }
 
 
->>>>>>> coverArt-branch
 
 }
 
