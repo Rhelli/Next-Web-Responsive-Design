@@ -25,16 +25,8 @@ body {
 
 /* footer */
 .footer {
-  text-align: center;
-  position: relative;
-  z-index: 4;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-  color: #555
+  height: 258px;
+  background: #555;
 }
 
 
