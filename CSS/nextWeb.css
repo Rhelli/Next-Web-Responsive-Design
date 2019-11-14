@@ -22,26 +22,50 @@ body {
   box-sizing: inherit;
 }
 
+/* NAVBAR */
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 50px;
+  background-color: slateblue;
+}
+
+/* Nav Icon */
+nav div:first-child {
+  display: none;
+}
+
+nav div:first-child a img {
+  width: 105px;
+  height: 80px;
+}
+
+/* Top Nav (Black) Content */
+.black-nav {
+  display: inline;
+}
+
+.black-nav li {
+  float: right;
+}
+
+
+
 /* MEDIA QUERIES */
 
 /* Desktops & Other Large Devices */
 @media screen and (min-width: 1200px) {
-
-
 
 }
 
 /* Laptops & Other Medium Devices */
 @media screen and  (min-width: 1024px) {
 
-
-
 }
 
 /* Phones & Smaller Devices */
 @media screen and (min-width: 768px) {
-
-  
 
 }
 
