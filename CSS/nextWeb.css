@@ -29,11 +29,55 @@ ul {
 /* NAVBAR */
 nav {
   display: flex;
-  flex-flow: row nowrap;
   width: 100vw;
   height: 50px;
   background-color: slateblue;
   border: 2px solid black;
+}
+
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: tan;
+  border: 1px solid black;
+}
+
+.coverArt-container div:first-child {
+  display: inline-block;
+  flex: 1 0 65%;
+  height: 100%;
+  background-color: steelblue;
+  border: 1px solid black;
+}
+
+.coverArt-container div:last-child {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  flex: 1 0 35%;
+  background-color: slategray;
+  border: 1px solid black;
+}
+
+.coverArt2 {
+  display: block;
+  max-width: 100%;
+  max-height: 50%;
+  background-color: thistle;
+  border: 1px solid black;
+}
+
+.coverArt3 {
+  display: block;
+  max-width: 100%;
+  max-height: 50%;
+  background-color: teal;
+  border: 1px solid black;
 }
 
 /* MEDIA QUERIES */
