@@ -39,7 +39,6 @@ nav {
   border: 2px solid black;
 }
 
-<<<<<<< HEAD
 /* LATEST-NEWS */
 .latest-news {
   margin: 12px;
@@ -65,7 +64,6 @@ nav {
   background: #555;
 }
 
-=======
 /* COVER STORIES/ARTICLES */
 .coverArt-container {
   display: flex;
@@ -112,7 +110,6 @@ nav {
   background-color: teal;
   border: 1px solid black;
 }
->>>>>>> coverArt-branch
 
 /* MEDIA QUERIES */
 
