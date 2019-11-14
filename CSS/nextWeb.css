@@ -16,6 +16,10 @@ body {
   text-align: left;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -35,7 +39,26 @@ nav {
   border: 2px solid black;
 }
 
-/* footer */
+/* LATEST-NEWS */
+.latest-news {
+  margin: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(179, 111, 111);
+}
+
+.ln-item {
+  flex: 1 0 calc(25% - 12px);
+  margin: 5px;
+  height: 250px;
+  width: 237px;
+  padding: 12px ;
+  background: rgb(129, 41, 41);
+}
+
+/* FOOTER */
 .footer {
   height: 258px;
   background: #555;
