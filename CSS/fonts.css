@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Shentox';
-  src: url('../Assets/Fonts/Shentox-Regular2.woff2') format('woff2'),
-      url('../Assets/Fonts/Shentox-Regular2.woff') format('woff');
+  src: url('../Assets/Fonts/Shentox-Regular.woff2') format('woff2'),
+      url('../Assets/Fonts/Shentox-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
