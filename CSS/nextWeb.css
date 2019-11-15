@@ -30,6 +30,11 @@ ul {
   list-style-type: none;
 }
 
+p, h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 /* NAVBAR */
 nav {
   display: flex;
@@ -208,10 +213,56 @@ nav {
 
 .ld-item {
   flex: 1 0 25%;
-  height: 200px;
   max-width: calc(25% - 10px);
   margin: 5px;
+  position: relative;
   background: rgb(129, 41, 41);
+}
+
+.ld-picture {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.ld-discount {
+  background-image: url(../Assets/Img/deals-ribbon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  display: block;
+  height: 80px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  z-index: 10;
+}
+
+.ld-discount p {
+  transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+}
+
+.ld-item > h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.ld-item h4:hover {
+  color: #f42;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* FOOTER */
