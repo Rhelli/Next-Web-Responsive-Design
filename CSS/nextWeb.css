@@ -5,6 +5,9 @@
 /* Black Nav Submenu Entrance */
 @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
+/* Large Nav TNW Logo Entrance */
+@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(12px);transform:translateY(12px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(12px);transform:translateY(12px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
 *,
 *::before,
 *::after {
@@ -55,6 +58,11 @@ ul {
 /* Disable Media Query Nav Logo */
 #media-nav-img {
   display: none;
+}
+
+#media-nav-img img {
+  -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 /* Top Black Nav */
@@ -530,6 +538,10 @@ ul {
   padding-left: 108px;
 }
 
+.black-nav div:last-child {
+  display: none;
+}
+
 /* Black Nav Drop Down Menus */
 .black-drop {
   float: left;
@@ -538,7 +550,7 @@ ul {
 
 /* CLEAR NAV */
 .clear-nav {
-  padding-left: 101px;
+  padding-left: 108px !important;
 }
 
 /* TNW Overlay Image */
