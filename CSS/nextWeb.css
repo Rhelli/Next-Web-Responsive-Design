@@ -77,10 +77,18 @@ ul {
   margin-left: 12px;
 }
 
+.black-nav div:first-child {
+  margin-left: 19px;
+}
+
 .black-nav div a {
-  font: 14px/32px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
+  font: 13px/32px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff9;
+}
+
+.black-nav div:first-child a {
+  color: #fff;
 }
 
 .black-nav div a:hover {
