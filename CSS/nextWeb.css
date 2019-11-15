@@ -213,7 +213,7 @@ nav {
 
 .ld-item {
   flex: 1 0 25%;
-  max-width: calc(25% - 10px);
+  max-width: calc(25% - 15px);
   margin: 5px;
   position: relative;
   background: rgb(129, 41, 41);
@@ -223,6 +223,7 @@ nav {
   width: 250px;
   height: 180px;
   object-fit: cover;
+  margin-bottom: 8px;
 }
 
 .ld-discount {
@@ -263,6 +264,24 @@ nav {
   color: #f42;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.ld-price {
+  padding-top: 4px;
+}
+
+.ld-price-old {
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 4px;
+  color: #aaa;
+}
+
+.ld-price-new {
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-right: 4px;
+  color: #555;
 }
 
 /* FOOTER */
