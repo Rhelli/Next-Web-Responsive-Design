@@ -185,7 +185,7 @@ nav {
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  background: rgb(246, 148, 255);
+  background: #c2b0c9;
   padding: 10px;
   margin: 0;
 }
@@ -195,7 +195,7 @@ nav {
   height: 300px;
   max-width: calc(33.33% - 10px);
   margin: 5px;
-  background: rgb(229, 90, 241);
+  background: #9656a1;
 }
 
 /* LATEST DEALS SECTION */
