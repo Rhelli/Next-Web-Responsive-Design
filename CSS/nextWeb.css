@@ -300,11 +300,47 @@ nav {
   font-family: 'ARS Maquette Regular';
 }
 
+.ts-latest-header h4:hover {
+  color: #f42;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .ts-latest-image {
   flex: 0 0 96px;
   height: 96px;
   width: 96px;
   object-fit: cover;
+}
+
+.ts-headline {
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.ts-headline h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 6px 0 6px 14px;
+  color: #aaa;
+}
+
+.ts-headline h4:before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
+
+.ts-headline h4:hover {
+  color: #555;
+  cursor: pointer;
 }
 
 /* LATEST DEALS SECTION */
