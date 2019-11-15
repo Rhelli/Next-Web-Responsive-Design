@@ -183,11 +183,11 @@ nav {
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
   height: auto;
-  background: #c2b0c9;
+  background: #9656a1;
   padding: 10px;
-  margin: 0;
 }
 
 .ts {
@@ -195,7 +195,7 @@ nav {
   max-width: calc(100% / 3);
   padding: 12px;
   margin-bottom: 24px;
-  background: #9656a1;
+  background: #fff;
 }
 
 .ts-title {
@@ -214,13 +214,15 @@ nav {
 }
 
 .ts-popular-image {
-  height: 232px;
+  width: 100%;
   object-fit: cover;
   margin-bottom: 8px;
 }
 
 .ts-popular-gradient {
   position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 232px;
   bottom: 8px;
@@ -268,6 +270,41 @@ nav {
 
 .ts-popular-header h6:hover {
   color: #fff;
+}
+
+.ts-latest {
+  display: flex;
+  background-color: rgba(255,68,34,.06);
+}
+
+.ts-latest-header {
+  flex: 1;
+  overflow: hidden;
+  padding: 10px 14px 0;
+  color: #f42;
+}
+
+.ts-latest-header h5 {
+  font-size: 13px;
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.ts-latest-header h4 {
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'ARS Maquette Regular';
+}
+
+.ts-latest-image {
+  flex: 0 0 96px;
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
 }
 
 /* LATEST DEALS SECTION */
