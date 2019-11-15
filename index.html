@@ -51,7 +51,7 @@
         </div>
       </div>
       <!-- Main (White) Nav Content -->
-      <div class="clear-nav">
+      <div class="clear-nav" id="clearNav">
         <!-- Nav Logo -->
         <div id="nav-logo">
           <a id="nav-img" href="#">
@@ -527,11 +527,11 @@
         document.getElementById("nav-logo").style.display = "none";
       } else {
         document.getElementById("navbar").style.top = "-32px";
+        document.getElementById("clearNav").style.paddingLeft = "106px";
         document.getElementById("nav-logo").style.display = "block";
         document.getElementById("nav-logo").style.position = "absolute";
         document.getElementById("nav-logo").style.left = "0";
         document.getElementById("nav-logo").style.zIndex = "20";
-        document.getElementsByClassName("clear-nav").style.paddingLeft = "106px";
       }
       prevScrollpos = currentScrollPos;
     }
