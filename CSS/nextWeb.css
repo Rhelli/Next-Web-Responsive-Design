@@ -1,5 +1,9 @@
+/* TNW Nav Logo Img Entrance */
 @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 @keyframes slide-in-top{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/* Black Nav Submenu Entrance */
+@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 *,
 *::before,
@@ -31,7 +35,7 @@ ul {
 }
 
 /* NAVBAR */
-#navbar > div {
+#navbar {
   display: flex;
   position: fixed;
   top: 0;
@@ -64,16 +68,31 @@ ul {
 }
 
 .black-nav > div {
-  padding: 0px 4px;
+  margin-left: 12px;
 }
 
 .black-nav div a {
+  font: 1em/32px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff9;
 }
 
 .black-nav div a:hover {
   color: #fff;
+}
+
+.black-nav > div:last-child {
+  display: flex;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+}
+
+.black-nav div:last-child div {
+  margin-right: 12px;
 }
 
 .black-drop {
@@ -84,11 +103,27 @@ ul {
 .black-drop-content {
   display: none;
   position: absolute;
+  top: 32px;
   background-color: #121212;
   width: 220px;
   height: 32px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
   z-index: 20;
+  -webkit-animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.black-drop-content::before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid rgba(0,0,0,.9);
+  content: "";
+  height: 0;
+  left: 32px;
+  margin-left: -6px;
+  position: absolute;
+  top: -6px;
+  width: 0;
 }
 
 .black-drop-content a {
