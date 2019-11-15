@@ -60,7 +60,7 @@ ul {
   display: none;
 }
 
-#media-nav-img img {
+#media {
   -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }

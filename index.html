@@ -18,7 +18,7 @@
     <nav id="navbar">
       <div id="media-nav-img">
         <a href="#" title="The Next Web">
-          <img src="Assets/Img/tnw.svg" alt="The Next Web">
+          <img id="mediaNavAnim" src="Assets/Img/tnw.svg" alt="The Next Web">
         </a>
       </div>
       <!-- Top (Black) Nav Content -->
@@ -526,8 +526,14 @@
         document.getElementById("navbar").style.top = "0";
         document.getElementById("nav-logo").style.display = "none";
         document.getElementById("clearNav").style.paddingLeft = "0";
+        document.getElementById("media-nav-img").style.display = "flex";
+        document.getElementById("media-nav-img").style.position = "absolute";
+        document.getElementById("media-nav-img").style.left = "0";
+        document.getElementById("media-nav-img").style.zIndex = "11";
+
       } else {
         document.getElementById("navbar").style.top = "-32px";
+        document.getElementById("media-nav-img").style.display = "none";
         document.getElementById("clearNav").style.paddingLeft = "106px";
         document.getElementById("nav-logo").style.display = "block";
         document.getElementById("nav-logo").style.position = "absolute";
