@@ -207,6 +207,7 @@ nav {
 .ld-header  {
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
   margin-bottom: 24px;
   color: #f42;
 }
@@ -219,7 +220,20 @@ nav {
   letter-spacing: -.015em;
 }
 
-.ld-header h2:hover {
+.ld-header h2::after {
+  background-image: url(../Assets/Img/download.svg);
+  background-size: 16px 16px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 0;
+  width: 16px;
+}
+
+.ld-header h2:hover,
+.ld-header span:hover {
   color: #000;
 }
 
@@ -230,32 +244,27 @@ nav {
   text-decoration: none;
 }
 
-.ld-header span:hover {
-  color: #000;
-}
-
 .latest-deals {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
-  height: auto;
-  background: rgb(179, 111, 111);
+
   padding: 10px;
   margin: 0;
 }
 
 .ld-item {
-  flex: 1 0 25%;
-  max-width: calc(25% - 20px);
+  flex: 0 0 25%;
+  max-width: calc(25% - 10px);
+  width: 250px;
   margin: 5px;
   position: relative;
-  background: rgb(129, 41, 41);
+
 }
 
 .ld-picture {
-  width: 250px;
+  width: 100%;
   height: 180px;
   object-fit: cover;
   margin-bottom: 8px;
