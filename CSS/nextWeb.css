@@ -213,7 +213,7 @@ nav {
 
 .ld-item {
   flex: 1 0 25%;
-  max-width: calc(25% - 15px);
+  max-width: calc(25% - 20px);
   margin: 5px;
   position: relative;
   background: rgb(129, 41, 41);
