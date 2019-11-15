@@ -186,13 +186,12 @@ nav {
   max-width: 1152px;
   margin: 0 auto;
   height: auto;
-  background: #9656a1;
   padding: 10px;
 }
 
 .ts {
-  flex-basis: calc(100% / 3);
-  max-width: calc(100% / 3);
+  flex-basis: calc((100% / 3) - 0px);
+  max-width: calc((100% / 3) - 0px);
   padding: 12px;
   margin-bottom: 24px;
   background: #fff;
