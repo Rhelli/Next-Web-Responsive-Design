@@ -276,6 +276,10 @@ ul {
   background: #555;
 }
 
+.search-page {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 
 /* Laptops & Other Large Devices */
