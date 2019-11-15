@@ -30,7 +30,7 @@ ul {
   list-style-type: none;
 }
 
-p, h4 {
+p, h2, h4 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -199,6 +199,41 @@ nav {
 }
 
 /* LATEST DEALS SECTION */
+.latest-deals-section {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.ld-header  {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: #f42;
+}
+
+.ld-header h2 {
+  line-height: 32px;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Avalon, sans-serif;
+  letter-spacing: -.015em;
+}
+
+.ld-header h2:hover {
+  color: #000;
+}
+
+.ld-header span {
+  line-height: 18px;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.ld-header span:hover {
+  color: #000;
+}
+
 .latest-deals {
   display: flex;
   flex-flow: row wrap;
