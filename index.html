@@ -51,7 +51,7 @@
         </div>
       </div>
       <!-- Main (White) Nav Content -->
-      <div class="clear-nav" id="clearNav">
+      <div class="clear-nav">
         <!-- Nav Logo -->
         <div id="nav-logo">
           <a id="nav-img" href="#">
@@ -71,7 +71,7 @@
           </div>
         </div>
         <!-- Nav sections -->
-        <div>
+        <div id="clearNav">
           <a href="https://thenextweb.com/latest" title="Latest">LATEST</a>
           <a href="https://thenextweb.com/hardfork" title="Hard Fork">HARD FORK</a>
           <a href="https://thenextweb.com/plugged" title="Plugged">PLUGGED</a>
@@ -624,7 +624,7 @@
         document.getElementById("clearNav").style.paddingLeft = "0";
         } else {
         document.getElementById("navbar").style.top = "-32px";
-        document.getElementById("clearNav").style.paddingLeft = "106px";
+        document.getElementById("clearNav").style.paddingLeft = "0";
         document.getElementById("nav-logo").style.display = "block";
       }
       prevScrollpos = currentScrollPos;

@@ -1,9 +1,12 @@
 /* TNW Nav Logo Img Entrance */
-@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-@keyframes slide-in-top{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@-webkit-keyframes tnw-small{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes tnw-small{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 /* Black Nav Submenu Entrance */
 @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/* Nav Logo DropDown Entrance */
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0.9}100%{transform:translateY(0);opacity:1}}
 
 /* Large Nav TNW Logo Entrance */
 @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(12px);transform:translateY(12px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(12px);transform:translateY(12px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
@@ -37,6 +40,503 @@ ul {
   list-style-type: none;
 }
 
+/* NAVBAR */
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  font: 14px/32px 'Shentox', Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 80px;
+  transition: top 0.1s;
+  z-index: 10;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  margin: 0;
+  padding: 0;
+}
+
+/* Disable Media Query Nav Logo */
+#media-nav-img {
+  display: none;
+}
+
+#media {
+  display: none;
+  -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/* Top Black Nav */
+.black-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  height: 32px !important;
+  width: 100%;
+  background-color: #606060;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  background-color: #121212;
+}
+
+.black-nav > div {
+  margin-left: 12px;
+}
+
+.black-nav div:first-child {
+  margin-left: 19px;
+}
+
+.black-nav div a {
+  font: 13px/32px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff9;
+}
+
+.black-nav div:first-child a {
+  color: #fff;
+}
+
+.black-nav div a:hover {
+  color: #fff;
+}
+
+.black-nav > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+}
+
+.black-nav div:last-child div {
+  margin-right: 12px;
+}
+
+/* Black Nav Drop Down Menus */
+.black-drop {
+  float: left;
+  overflow: hidden;
+}
+
+/* Content */
+.black-drop-content {
+  display: none;
+  position: absolute;
+  top: 32px;
+  background-color: #121212;
+  width: 220px;
+  height: 32px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+  z-index: 20;
+  -webkit-animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Arrow shape on-top container */
+.black-drop-content::before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid rgba(0,0,0,.9);
+  content: "";
+  height: 0;
+  left: 32px;
+  margin-left: -6px;
+  position: absolute;
+  top: -6px;
+  width: 0;
+}
+
+/* Links */
+.black-drop-content a {
+  float: none;
+  color: #fff9;
+  background-color: #121212;
+  padding: 0 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.black-drop-content a:hover {
+  color: #fff;
+}
+
+.black-drop:hover .black-drop-content {
+  display: block;
+}
+
+/* CLEAR NAV */
+.clear-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* TNW Overlay Image */
+#nav-img {
+  display: flex;
+  position: relative;
+  height: 48px;
+  width: 106px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 10;
+  background-color: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  will-change: height;
+}
+
+#nav-logo img {
+  display: block;
+  position: relative;
+  color: white;
+  height: 18px;
+  width: 66px;
+  padding: 0;
+  margin: 0;
+  -webkit-animation: tnw-small 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+  animation: tnw-small 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+#nav-logo {
+  display: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #121212;
+}
+
+/* Logo Dropdown Container */
+.logo-drop {
+  float: left;
+  overflow: hidden;
+}
+
+.logo-drop .logo-content {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Logo Hover Gif */
+#nav-logo:hover #nav-img {
+  background: url('/Assets/Img/logo-gif.gif') 50%;
+  background-size: cover;
+}
+
+/* Logo Dropdown Content */
+.logo-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background-color: #121212;
+  min-width: 106px;
+  height: 31px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+  z-index: 9;
+}
+
+.logo-content a {
+  float: none;
+  color: #fff9;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background: #121212;
+}
+
+.logo-content a:hover {
+  color: #fff;
+}
+
+#nav-logo:hover .logo-content {
+  display: block;
+  animation: slide-in-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+}
+
+/* Clear Nav Links */
+.clear-nav > div:nth-child(2) a {
+  text-decoration: none;
+  color: #aaa;
+  font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
+  padding: 18px 10px 0;
+}
+
+/* First Clear Nav Link (Latest) */
+.clear-nav > div:nth-child(2) a:first-child {
+  padding: 18px 10px 0 20px;
+}
+
+.clear-nav > div:nth-child(2) a:hover {
+  color: #333;
+}
+
+/* Clear Nav Search Icon */
+.clear-nav > div:last-child {
+  border-left: 1px solid #d0d0d0;
+  float: left
+}
+
+.clear-nav > div:last-child {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 48px;
+  padding: 0;
+  margin: 0;
+  opacity: 0.25;
+  will-change: opacity;
+  margin-left: auto;
+  padding: 12px 0 0 15px
+}
+
+.clear-nav > div:last-child a i {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  transform: scaleX(-1);
+}
+
+.clear-nav > div:last-child:hover {
+  opacity: 0.5;
+}
+
+.mob-nav {
+  display: none;
+}
+
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 60vh;
+  max-height: 560px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: tan;
+  border: 1px solid black;
+  margin-top: 90px;
+}
+
+.coverArt-container > div:first-child {
+  display: inline-block;
+  flex: 1 0 65%;
+  height: 100%;
+  background-color: steelblue;
+  border: 1px solid black;
+}
+
+.coverArt-container div:last-child {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  flex: 1 0 35%;
+  height: 100%;
+  background-color: slategray;
+  border: 1px solid black;
+}
+
+.coverArt2 {
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: thistle;
+  border: 1px solid black;
+}
+
+.coverArt3 {
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: teal;
+  border: 1px solid black;
+}
+
+/* MAIN BODY WRAPPER */
+.body-wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 20px;
+  background-color: wheat;
+}
+
+.body-wrapper > section {
+  margin-bottom: 25px;
+}
+
+/* LATEST-NEWS-SECTION */
+.latest-news-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.latest-news {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  background: rgb(179, 111, 111);
+  padding: 10px;
+  margin: 0;
+}
+
+.ln-item {
+  flex: 1 0 25%;
+  height: 200px;
+  max-width: calc(25% - 10px);
+  margin: 5px;
+  background: rgb(129, 41, 41);
+}
+
+/* FUNDING SECTION */
+.funding-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  background-color: tomato;
+  border: 1px solid black;
+}
+
+.funding-section header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: yellowgreen;
+  border: 1px solid black;
+}
+
+.fCard-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.fCard-container > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex: 1 0 calc(25% - 40px);
+  height: 287px;
+  max-width: 25%;
+  margin: 10px 10px;
+  border: 1px solid black;
+}
+
+/* TOPICS SECTION */
+.topics-section-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  background: rgb(246, 148, 255);
+  padding: 10px;
+  margin: 0;
+}
+
+.ts {
+  flex: 1 0 25%;
+  height: 300px;
+  max-width: calc(33.33% - 10px);
+  margin: 5px;
+  background: rgb(229, 90, 241);
+}
+
+/* LATEST DEALS SECTION */
+.latest-deals {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  background: rgb(179, 111, 111);
+  padding: 10px;
+  margin: 0;
+}
+
+.ld-item {
+  flex: 1 0 25%;
+  height: 200px;
+  max-width: calc(25% - 10px);
+  margin: 5px;
+  background: rgb(129, 41, 41);
+}
+
+/* FOOTER */
+.footer {
+  height: 258px;
+  background: #555;
+}
+
+.search-page {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Laptops & Other Large Devices */
+@media screen and  (max-width: 1024px) {
+
+/* NAVBAR */
+
+
+/* Cover Stories/Articles Section */
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
+
+}
+
+/* Tablets & Medium Devices */
+@media screen and (max-width: 768px) {
 /* NAVBAR */
 #navbar {
   display: flex;
@@ -317,446 +817,6 @@ ul {
   display: none;
 }
 
-/* COVER STORIES/ARTICLES */
-.coverArt-container {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  height: 60vh;
-  max-height: 560px;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  background-color: tan;
-  border: 1px solid black;
-  margin-top: 90px;
-}
-
-.coverArt-container > div:first-child {
-  display: inline-block;
-  flex: 1 0 65%;
-  height: 100%;
-  background-color: steelblue;
-  border: 1px solid black;
-}
-
-.coverArt-container div:last-child {
-  display: inline-flex;
-  flex-flow: column nowrap;
-  flex: 1 0 35%;
-  height: 100%;
-  background-color: slategray;
-  border: 1px solid black;
-}
-
-.coverArt2 {
-  display: block;
-  width: 100%;
-  height: 50%;
-  background-color: thistle;
-  border: 1px solid black;
-}
-
-.coverArt3 {
-  display: block;
-  width: 100%;
-  height: 50%;
-  background-color: teal;
-  border: 1px solid black;
-}
-
-/* MAIN BODY WRAPPER */
-.body-wrapper {
-  margin: 0 auto;
-  max-width: 1192px;
-  padding: 20px;
-  background-color: wheat;
-}
-
-.body-wrapper > section {
-  margin-bottom: 25px;
-}
-
-/* LATEST-NEWS-SECTION */
-.latest-news-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  width: auto;
-}
-
-.latest-news {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  background: rgb(179, 111, 111);
-  padding: 10px;
-  margin: 0;
-}
-
-.ln-item {
-  flex: 1 0 25%;
-  height: 200px;
-  max-width: calc(25% - 10px);
-  margin: 5px;
-  background: rgb(129, 41, 41);
-}
-
-/* FUNDING SECTION */
-.funding-section {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  width: auto;
-  height: auto;
-  background-color: tomato;
-  border: 1px solid black;
-}
-
-.funding-section header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: yellowgreen;
-  border: 1px solid black;
-}
-
-.fCard-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: auto;
-}
-
-.fCard-container > div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: center;
-  flex: 1 0 calc(25% - 40px);
-  height: 287px;
-  max-width: 25%;
-  margin: 10px 10px;
-  border: 1px solid black;
-}
-
-/* TOPICS SECTION */
-.topics-section-container {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  background: rgb(246, 148, 255);
-  padding: 10px;
-  margin: 0;
-}
-
-.ts {
-  flex: 1 0 25%;
-  height: 300px;
-  max-width: calc(33.33% - 10px);
-  margin: 5px;
-  background: rgb(229, 90, 241);
-}
-
-/* LATEST DEALS SECTION */
-.latest-deals {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  background: rgb(179, 111, 111);
-  padding: 10px;
-  margin: 0;
-}
-
-.ld-item {
-  flex: 1 0 25%;
-  height: 200px;
-  max-width: calc(25% - 10px);
-  margin: 5px;
-  background: rgb(129, 41, 41);
-}
-
-/* FOOTER */
-.footer {
-  height: 258px;
-  background: #555;
-}
-
-.search-page {
-  display: none;
-}
-
-/* MEDIA QUERIES */
-
-/* Laptops & Other Large Devices */
-@media screen and  (max-width: 1024px) {
-
-/* NAVBAR */
-/* Large TNW Logo/GIF */
-#media-nav-img {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 106px;
-  height: 80px;
-  background-color: #f42;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  cursor: pointer;
-}
-
-#media-nav-img img {
-  display: block;
-  height: 15px;
-  width: 65px;
-  z-index: 21;
-}
-
-#media-nav-img:hover {
-  background: url('/Assets/Img/logo-gif.gif') 50%;
-  background-size: cover;
-}
-
-/* Realign Top Black Nav */
-.black-nav {
-  padding-left: 108px;
-}
-
-/* Get rid of right hand nav options */
-.black-nav div:last-child {
-  display: none;
-}
-
-/* Realign Clear Nav. Important overrides JS declaration */
-.clear-nav {
-  padding-left: 108px !important;
-}
-
-#nav-logo {
-  display: none;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: #121212;
-}
-/* Cover Stories/Articles Section */
-
-
-/* LATEST NEWS SECTION */
-
-
-/* LATEST FUNDING SECTION */
-
-
-/* TOPICS SECTION */
-
-
-/* LATEST DEALS SECTION */
-
-
-/* FOOTER */
-
-}
-
-/* Tablets & Medium Devices */
-@media screen and (max-width: 768px) {
-/* Disable Media Query Nav Logo */
-#media-nav-img {
-  display: none !important;
-}
-
-/* Top Black Nav */
-.black-nav {
-  display: none;
-}
-
-/* TNW Overlay Image */
-#nav-img {
-  display: flex;
-  position: relative;
-  height: 48px;
-  width: 106px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  z-index: 10;
-  background-color: #f42;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
-  will-change: height;
-}
-
-#nav-logo img {
-  display: block;
-  position: relative;
-  color: white;
-  height: 18px;
-  width: 66px;
-  padding: 0;
-  margin: 0;
-  -webkit-animation: slide-in-top 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-  animation: slide-in-top 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-}
-
-#nav-logo {
-  display: none;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: #121212;
-}
-
-/* Logo Dropdown Container */
-.logo-drop {
-  float: left;
-  overflow: hidden;
-}
-
-.logo-drop .logo-content {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Logo Hover Gif */
-#nav-logo:hover #nav-img {
-  background: url('/Assets/Img/logo-gif.gif') 50%;
-  background-size: cover;
-}
-
-/* Logo Dropdown Content */
-.logo-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 48px;
-  background-color: #121212;
-  min-width: 106px;
-  height: 31px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
-  z-index: 200;
-}
-
-.logo-content a {
-  float: none;
-  color: #fff9;
-  padding: 0;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  background: #121212;
-}
-
-.logo-content a:hover {
-  color: #fff;
-}
-
-#nav-logo:hover .logo-content {
-  display: block;
-}
-
-/* Clear Nav Links */
-.clear-nav > div:nth-child(2) a {
-  text-decoration: none;
-  color: #aaa;
-  font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
-  padding: 18px 10px 0;
-}
-
-/* First Clear Nav Link (Latest) */
-.clear-nav > div:nth-child(2) a:first-child {
-  padding: 18px 10px 0 20px;
-}
-
-.clear-nav > div:nth-child(2) a:hover {
-  color: #333;
-}
-
-/* Clear Nav Search Icon */
-.clear-nav > div:last-child {
-  border-left: 1px solid #d0d0d0;
-  float: left
-}
-
-.clear-nav > div:last-child {
-  display: block;
-  position: relative;
-  height: 100%;
-  width: 48px;
-  padding: 0;
-  margin: 0;
-  opacity: 0.25;
-  will-change: opacity;
-  margin-left: auto;
-  padding: 12px 0 0 15px
-}
-
-.clear-nav > div:last-child a i {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5em;
-  transform: scaleX(-1);
-}
-
-.clear-nav > div:last-child:hover {
-  opacity: 0.5;
-}
-
-.mob-nav {
-  display: none;
-}
-
-/* Cover Stories/Articles Section */
-.coverArt-container {
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: auto;
-  max-height: 1000px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.coverArt-container > div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: auto;
-  width: 100%;
-}
-
-.coverArt-container > div > article {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  align-content: flex-end;
-  min-height: 30vh;
-}
 
 /* LATEST NEWS SECTION */
 
