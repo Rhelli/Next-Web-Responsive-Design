@@ -13,6 +13,14 @@
 @-webkit-keyframes mediaNavAnim{0%{-webkit-transform:translateY(15px);transform:translateY(15px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 @keyframes mediaNavAnim{0%{-webkit-transform:translateY(15px);transform:translateY(15px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
+/* Mob Nav Entrance */
+@-webkit-keyframes mobNavEntrance{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@keyframes mobNavEntrance{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+/* Mob Nav Exit */
+@-webkit-keyframes mobNavExit{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
+@keyframes mobNavExit{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
+
 *,
 *::before,
 *::after {
@@ -312,7 +320,7 @@ ul {
   opacity: 0.25;
   will-change: opacity;
   margin-left: auto;
-  padding: 12px 0 0 15px
+  padding: 10px 0 0 15px
 }
 
 .clear-nav > div:nth-child(3) a i {
@@ -636,42 +644,52 @@ ul {
   display: inline-block;
   width: 48px;
   height: 100%;
-  padding: 12px 17px;
+  padding: 12px 15px 0 10px;
+  border-left: 1px solid #eee;
 }
 
-.clear-nav > div:last-child a {
+.clear-nav > div:last-child button {
   text-decoration: none;
   color: #ff4422;
   font-size: 1.6em;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 /* Pop-Out Mobile Nav */
-.mob-nav {
+#mobNav {
   display: none;
   flex-flow: column nowrap;
   position: absolute;
+  top: 0;
+  left: 0;
   font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
   background: linear-gradient(to bottom right,#c09,#f42 85%);
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 1000;
+  -webkit-animation: mobNavEntrance 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: mobNavEntrance 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
-.mob-nav > div:first-child {
+#mobNav > div:first-child {
   height: 48px;
   width: 100vw;
 }
 
-.mob-nav > div:first-child a {
+#mobNav > div:first-child button {
   display: block;
   height: 48px;
   width: 48px;
   position: relative;
   margin-left: auto;
   margin-right: 15px;
-  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
   color: #fff;
-  padding: 10px 0 0 15px;
 }
 
 .mob-nav-top {

@@ -84,15 +84,17 @@
             <a id="open-search" href="#"><i class="fas fa-search"></i></a>
           </div>
           <div>
-            <a id="hamburger-mob" href="#"><i class="fas fa-bars"></i></a>
+            <button id="hamburger-mob" onclick="showMobNav()"><i class="fas fa-bars"></i></button>
           </div>
         </div>
       </div>
       <!-- Mobile Nav -->
-      <div class="mob-nav">
+      <div id="mobNav">
         <div>
           <a id="close-mob-nav" href="#">
-            <i class="fas fa-times fa-2x"></i>
+            <button onclick="hideMobNav()">
+              <i class="fas fa-times fa-2x"></i>
+            </button>
           </a>
         </div>
         <div class="mob-nav-top">
@@ -666,5 +668,23 @@
       }
       prevScrollpos = currentScrollPos;
       }
+    </script>
+    <script>
+      function showMobNav() {
+        var x = document.getElementById("mobNav");
+        if (x.style.display == "none") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function hideMobNav() {
+        var j = document.getElementById("mobNav");
+        if (j.style.display == "flex") {
+          j.style.display = "none";
+        } else {
+          j.style.display = "flex";
+        }
+      }      
     </script>
 </html>
