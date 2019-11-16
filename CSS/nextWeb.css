@@ -313,6 +313,10 @@ ul {
   opacity: 0.5;
 }
 
+.mob-nav {
+  display: none;
+}
+
 /* COVER STORIES/ARTICLES */
 .coverArt-container {
   display: flex;
@@ -524,8 +528,8 @@ ul {
 
 #media-nav-img img {
   display: block;
-  height: 16px;
-  width: 66px;
+  height: 15px;
+  width: 65px;
   z-index: 21;
 }
 
@@ -534,23 +538,57 @@ ul {
   background-size: cover;
 }
 
+/* Realign Top Black Nav */
 .black-nav {
   padding-left: 108px;
 }
 
+/* Get rid of right hand nav options */
 .black-nav div:last-child {
   display: none;
 }
 
-/* Black Nav Drop Down Menus */
-.black-drop {
-  float: left;
-  overflow: hidden;
-}
-
-/* CLEAR NAV */
+/* Realign Clear Nav. Important overrides JS declaration */
 .clear-nav {
   padding-left: 108px !important;
+}
+
+#nav-logo {
+  display: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #121212;
+}
+/* Cover Stories/Articles Section */
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
+
+}
+
+/* Tablets & Medium Devices */
+@media screen and (max-width: 768px) {
+/* Disable Media Query Nav Logo */
+#media-nav-img {
+  display: none !important;
+}
+
+/* Top Black Nav */
+.black-nav {
+  display: none;
 }
 
 /* TNW Overlay Image */
@@ -624,7 +662,7 @@ ul {
 .logo-content a {
   float: none;
   color: #fff9;
-  padding: 6px 0px;
+  padding: 0;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -640,7 +678,7 @@ ul {
 }
 
 /* Clear Nav Links */
-.clear-nav div:nth-child(2) a {
+.clear-nav > div:nth-child(2) a {
   text-decoration: none;
   color: #aaa;
   font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
@@ -648,64 +686,47 @@ ul {
 }
 
 /* First Clear Nav Link (Latest) */
-.clear-nav div:nth-child(2) a:first-child {
+.clear-nav > div:nth-child(2) a:first-child {
   padding: 18px 10px 0 20px;
 }
 
-.clear-nav div:nth-child(2) a:hover {
+.clear-nav > div:nth-child(2) a:hover {
   color: #333;
 }
 
 /* Clear Nav Search Icon */
 .clear-nav > div:last-child {
+  border-left: 1px solid #d0d0d0;
+  float: left
+}
+
+.clear-nav > div:last-child {
   display: block;
   position: relative;
   height: 100%;
+  width: 48px;
+  padding: 0;
+  margin: 0;
   opacity: 0.25;
-  border: solid 2px #eee;
-  padding: 10px 15px;
   will-change: opacity;
   margin-left: auto;
-  text-decoration: none;
+  padding: 12px 0 0 15px
+}
+
+.clear-nav > div:last-child a i {
   color: black;
-  font-size: 1.2em;
+  text-decoration: none;
+  font-size: 1.5em;
   transform: scaleX(-1);
 }
 
-.clear-nav div:last-child a i {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-}
-
-.clear-nav div:last-child:hover {
+.clear-nav > div:last-child:hover {
   opacity: 0.5;
 }
 
-/* Cover Stories/Articles Section */
-
-
-/* LATEST NEWS SECTION */
-
-
-/* LATEST FUNDING SECTION */
-
-
-/* TOPICS SECTION */
-
-
-/* LATEST DEALS SECTION */
-
-
-/* FOOTER */
-
+.mob-nav {
+  display: none;
 }
-
-/* Tablets & Medium Devices */
-@media screen and (max-width: 768px) {
-
-/* NAVBAR */
-
 
 /* Cover Stories/Articles Section */
 .coverArt-container {
