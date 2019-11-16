@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TNW</title>
     <meta name="description" content="Original and proudly opinionated perspectives on remarkable stories for Generation T">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
     <link rel="icon" href="Assets/Img/favicon.png">
@@ -596,8 +596,8 @@
     }
   </script> -->
 
-  <script>
-    const mqM = window.matchMedia("(min-width:768px) and (max-width:1024px)");
+  <!-- <script>
+    const mqM = window.matchMedia("(max-width:1024px)");
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos <= 0 && mqM.matches) {
@@ -616,7 +616,7 @@
   
   <script>
     const mqL = window.matchMedia("(min-width:1024px)");
-    window.onscroll = function() {
+    window.onscroll = function screenTest() {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos <= 0 && mqL.matches) {
         document.getElementById("navbar").style.top = "0";
@@ -628,5 +628,36 @@
       }
       prevScrollpos = currentScrollPos;
     }
-  </script>
+  </script> -->
+
+    <script>
+      const mqL = window.matchMedia("(min-width:1024px)");
+      const mqM = window.matchMedia("(max-width:1024px)");
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (mqL.matches) {
+          if (currentScrollPos <= 0) {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("nav-logo").style.display = "none";
+          } else {
+            document.getElementById("navbar").style.top = "-32px";
+            document.getElementById("clearNav").style.paddingLeft = "0";
+            document.getElementById("nav-logo").style.display = "block";
+          }
+        }
+        if (mqM.matches) {
+          if (currentScrollPos <= 0 && mqM.matches) {
+          document.getElementById("navbar").style.top = "0";
+          document.getElementById("media-nav-img").style.display = "flex";
+          document.getElementById("nav-logo").style.display = "none";
+          } else {
+          document.getElementById("navbar").style.top = "-32px";
+          document.getElementById("media-nav-img").style.display = "none";
+          document.getElementById("nav-logo").style.display = "block";
+          document.getElementById("clearNav").style.paddingLeft = "106px";
+        } 
+      }
+      prevScrollpos = currentScrollPos;
+      }
+    </script>
 </html>
