@@ -1,15 +1,17 @@
 /* TNW Nav Logo Img Entrance */
-@-webkit-keyframes tnw-small{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-@keyframes tnw-small{0%{-webkit-transform:translateY(-14px);transform:translateY(-14px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@-webkit-keyframes tnw-small{0%{-webkit-transform:translateY(-12px);transform:translateY(-12px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes tnw-small{0%{-webkit-transform:translateY(-12px);transform:translateY(-12px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 /* Black Nav Submenu Entrance */
-@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@-webkit-keyframes blackNavDrop{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes blackNavDrop{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 /* Nav Logo DropDown Entrance */
-@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0.9}100%{transform:translateY(0);opacity:1}}
+@keyframes navLogo{0%{transform:translateY(-1000px);opacity:0.9}100%{transform:translateY(0);opacity:1}}
 
 /* Large Nav TNW Logo Entrance */
-@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(12px);transform:translateY(12px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(12px);transform:translateY(12px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@-webkit-keyframes mediaNavAnim{0%{-webkit-transform:translateY(15px);transform:translateY(15px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes mediaNavAnim{0%{-webkit-transform:translateY(15px);transform:translateY(15px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 *,
 *::before,
@@ -51,7 +53,7 @@ ul {
   font: 14px/32px 'Shentox', Helvetica, Arial, sans-serif;
   width: 100%;
   height: 80px;
-  transition: top 0.1s;
+  transition: top 0.05s;
   z-index: 10;
   box-shadow: 0 0 32px rgba(0,0,0,.15);
   margin: 0;
@@ -141,8 +143,8 @@ ul {
   height: 32px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
   z-index: 20;
-  -webkit-animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: blackNavDrop 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: blackNavDrop 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* Arrow shape on-top container */
@@ -259,6 +261,7 @@ ul {
 
 .logo-content a {
   float: none;
+  font: 0.9em/31px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
   color: #fff9;
   padding: 0;
   text-decoration: none;
@@ -273,7 +276,7 @@ ul {
 
 #nav-logo:hover .logo-content {
   display: block;
-  animation: slide-in-top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+  animation: navLogo 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
 }
 
 /* Clear Nav Links */
@@ -315,7 +318,7 @@ ul {
 .clear-nav > div:last-child a i {
   color: black;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   transform: scaleX(-1);
 }
 
@@ -554,256 +557,14 @@ ul {
 }
 
 #mediaNavAnim {
-  -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
-
-/* Top Black Nav */
-.black-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  height: 32px;
-  width: 100%;
-  background-color: #606060;
-  padding: 0;
-  margin: 0;
-  z-index: 10;
-  background-color: #121212;
-}
-
-.black-nav > div {
-  margin-left: 12px;
-}
-
-.black-nav div:first-child {
-  margin-left: 19px;
-}
-
-.black-nav div a {
-  font: 13px/32px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #fff9;
-}
-
-.black-nav div:first-child a {
-  color: #fff;
-}
-
-.black-nav div a:hover {
-  color: #fff;
+  -webkit-animation: mediaNavAnim 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: mediaNavAnim 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .black-nav > div:last-child {
   display: none;
 }
 
-.black-nav div:last-child div {
-  margin-right: 12px;
-}
-
-/* Black Nav Drop Down Menus */
-.black-drop {
-  float: left;
-  overflow: hidden;
-}
-
-/* Content */
-.black-drop-content {
-  display: none;
-  position: absolute;
-  top: 32px;
-  background-color: #121212;
-  width: 220px;
-  height: 32px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
-  z-index: 20;
-  -webkit-animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-/* Arrow shape on-top container */
-.black-drop-content::before {
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid rgba(0,0,0,.9);
-  content: "";
-  height: 0;
-  left: 32px;
-  margin-left: -6px;
-  position: absolute;
-  top: -6px;
-  width: 0;
-}
-
-/* Links */
-.black-drop-content a {
-  float: none;
-  color: #fff9;
-  background-color: #121212;
-  padding: 0 12px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.black-drop-content a:hover {
-  color: #fff;
-}
-
-.black-drop:hover .black-drop-content {
-  display: block;
-}
-
-/* CLEAR NAV */
-.clear-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  align-content: center;
-  height: 48px;
-  width: 100%;
-  background-color: #fff;
-}
-
-/* TNW Overlay Image */
-#nav-img {
-  display: flex;
-  position: relative;
-  height: 48px;
-  width: 106px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  z-index: 10;
-  background-color: #f42;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
-  will-change: height;
-}
-
-#nav-logo img {
-  display: block;
-  position: relative;
-  color: white;
-  height: 18px;
-  width: 66px;
-  padding: 0;
-  margin: 0;
-  -webkit-animation: slide-in-top 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-  animation: slide-in-top 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-}
-
-#nav-logo {
-  display: none;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: #121212;
-}
-
-/* Logo Dropdown Container */
-.logo-drop {
-  float: left;
-  overflow: hidden;
-}
-
-.logo-drop .logo-content {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Logo Hover Gif */
-#nav-logo:hover #nav-img {
-  background: url('/Assets/Img/logo-gif.gif') 50%;
-  background-size: cover;
-}
-
-/* Logo Dropdown Content */
-.logo-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 48px;
-  background-color: #121212;
-  min-width: 106px;
-  height: 31px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
-  z-index: 200;
-}
-
-.logo-content a {
-  float: none;
-  color: #fff9;
-  padding: 0;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  background: #121212;
-}
-
-.logo-content a:hover {
-  color: #fff;
-}
-
-#nav-logo:hover .logo-content {
-  display: block;
-}
-
-/* Clear Nav Links */
-.clear-nav > div:nth-child(2) a {
-  text-decoration: none;
-  color: #aaa;
-  font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
-  padding: 18px 10px 0;
-}
-
-/* First Clear Nav Link (Latest) */
-.clear-nav > div:nth-child(2) a:first-child {
-  padding: 18px 10px 0 20px;
-}
-
-.clear-nav > div:nth-child(2) a:hover {
-  color: #333;
-}
-
-/* Clear Nav Search Icon */
-.clear-nav > div:last-child {
-  border-left: 1px solid #d0d0d0;
-  float: left
-}
-
-.clear-nav > div:last-child {
-  display: block;
-  position: relative;
-  height: 100%;
-  width: 48px;
-  padding: 0;
-  margin: 0;
-  opacity: 0.25;
-  will-change: opacity;
-  margin-left: auto;
-  padding: 12px 0 0 15px
-}
-
-.clear-nav > div:last-child a i {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5em;
-  transform: scaleX(-1);
-}
-
-.clear-nav > div:last-child:hover {
-  opacity: 0.5;
-}
-
-.mob-nav {
-  display: none;
-}
 
 /* Cover Stories/Articles Section */
 
