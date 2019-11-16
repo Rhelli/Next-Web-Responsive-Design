@@ -58,6 +58,11 @@ ul {
   padding: 0;
 }
 
+#navbar > div:nth-child(2) {
+  width: 100%;
+  height: auto;
+}
+
 /* Disable Media Query Nav Logo */
 #media-nav-img {
   display: none;
@@ -514,53 +519,41 @@ ul {
 @media screen and  (max-width: 1024px) {
 
 /* NAVBAR */
-
-
-/* Cover Stories/Articles Section */
-
-
-/* LATEST NEWS SECTION */
-
-
-/* LATEST FUNDING SECTION */
-
-
-/* TOPICS SECTION */
-
-
-/* LATEST DEALS SECTION */
-
-
-/* FOOTER */
-
-}
-
-/* Tablets & Medium Devices */
-@media screen and (max-width: 768px) {
-/* NAVBAR */
 #navbar {
-  display: flex;
-  position: fixed;
-  top: 0;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: flex-start;
   align-content: flex-start;
-  font: 14px/32px 'Shentox', Helvetica, Arial, sans-serif;
-  width: 100%;
-  height: 80px;
-  transition: top 0.1s;
-  z-index: 10;
-  box-shadow: 0 0 32px rgba(0,0,0,.15);
-  margin: 0;
-  padding: 0;
 }
 
 /* Disable Media Query Nav Logo */
 #media-nav-img {
-  display: none;
+  display: inline-block;
+  height: 80px;
+  width: 121px;
+  background-color: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  margin: 0;
+  padding: 0;
 }
 
-#media {
+#media-nav-img:hover {
+  background: url('/Assets/Img/logo-gif.gif') 50%;
+  background-size: cover;
+}
+
+#media-nav-img a {
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 28px 10px;
+}
+
+#mediaNavAnim {
+  width: 85px;
+  height: 15px;
+}
+
+#mediaNavAnim {
   -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
@@ -572,7 +565,7 @@ ul {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  height: 32px !important;
+  height: 32px;
   width: 100%;
   background-color: #606060;
   padding: 0;
@@ -604,12 +597,7 @@ ul {
 }
 
 .black-nav > div:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-  position: relative;
-  margin-left: auto;
+  display: none;
 }
 
 .black-nav div:last-child div {
@@ -817,6 +805,28 @@ ul {
   display: none;
 }
 
+/* Cover Stories/Articles Section */
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
+
+}
+
+/* Tablets & Medium Devices */
+@media screen and (max-width: 768px) {
+/* NAVBAR */
 
 /* LATEST NEWS SECTION */
 

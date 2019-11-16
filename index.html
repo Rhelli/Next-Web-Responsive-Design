@@ -22,7 +22,8 @@
         </a>
       </div>
       <!-- Top (Black) Nav Content -->
-      <div class="black-nav">
+      <div>
+        <div class="black-nav">
         <div><a href="https://index.co/" title="News">News</a></div>
         <div class="black-drop">
           <a href="#">Events ▾</a>
@@ -49,38 +50,39 @@
           <div><a href="https://thenextweb.homerun.co/" title="Jobs">Jobs</a></div>
           <div><a href="https://thenextweb.com/contact" title="Contact">Contact</a></div>
         </div>
-      </div>
-      <!-- Main (White) Nav Content -->
-      <div class="clear-nav">
-        <!-- Nav Logo -->
-        <div id="nav-logo">
-          <a id="nav-img" href="#">
-            <img src="Assets/Img/tnw.svg" alt="The Next Web">
-          </a>
-          <!-- Logo Drop Down Menu -->
-          <div class="logo-drop">
-            <div class="logo-content">
-              <a href="https://thenextweb.com/">News</a>
-              <a href="https://thenextweb.com/conference/">Events</a>
-              <a href="https://index.co/">Index</a>
-              <a href="https://tq.co/">TQ</a>
-              <a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&utm_medium=referral&utm_campaign=navbar">Deals</a>
-              <a href="https://answers.thenextweb.com/">Answers</a>
-              <a href="https://thenextweb.com/x/">TNW X</a>
+        </div>
+        <!-- Main (White) Nav Content -->
+        <div class="clear-nav">
+          <!-- Nav Logo -->
+          <div id="nav-logo">
+            <a id="nav-img" href="#">
+              <img src="Assets/Img/tnw.svg" alt="The Next Web">
+            </a>
+            <!-- Logo Drop Down Menu -->
+            <div class="logo-drop">
+              <div class="logo-content">
+                <a href="https://thenextweb.com/">News</a>
+                <a href="https://thenextweb.com/conference/">Events</a>
+                <a href="https://index.co/">Index</a>
+                <a href="https://tq.co/">TQ</a>
+                <a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&utm_medium=referral&utm_campaign=navbar">Deals</a>
+                <a href="https://answers.thenextweb.com/">Answers</a>
+                <a href="https://thenextweb.com/x/">TNW X</a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Nav sections -->
-        <div id="clearNav">
-          <a href="https://thenextweb.com/latest" title="Latest">LATEST</a>
-          <a href="https://thenextweb.com/hardfork" title="Hard Fork">HARD FORK</a>
-          <a href="https://thenextweb.com/plugged" title="Plugged">PLUGGED</a>
-          <a href="https://thenextweb.com/adobe-fundamentals" title="Fundamentals">FUNDAMENTALS</a>
-          <a href="https://thenextweb.com/work2030" title="Work 2030">WORK 2030</a>
-        </div>
-        <!-- Search Icon -->
-        <div>
-          <a id="open-search" href="#"><i class="fas fa-search"></i></a>
+          <!-- Nav sections -->
+          <div id="clearNav">
+            <a href="https://thenextweb.com/latest" title="Latest">LATEST</a>
+            <a href="https://thenextweb.com/hardfork" title="Hard Fork">HARD FORK</a>
+            <a href="https://thenextweb.com/plugged" title="Plugged">PLUGGED</a>
+            <a href="https://thenextweb.com/adobe-fundamentals" title="Fundamentals">FUNDAMENTALS</a>
+            <a href="https://thenextweb.com/work2030" title="Work 2030">WORK 2030</a>
+          </div>
+          <!-- Search Icon -->
+          <div>
+            <a id="open-search" href="#"><i class="fas fa-search"></i></a>
+          </div>
         </div>
       </div>
       <!-- Mobile Nav -->
@@ -595,14 +597,13 @@
   </script> -->
 
   <script>
-    var mqMed = window.matchMedia("(min-width:768px) and (max-width:1024px)");
-    var prevScrollpos = window.pageYOffset;
+    const mqM = window.matchMedia("(min-width:768px) and (max-width:1024px)");
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
-      if (currentScrollPos <= 0 && mqMed.matches) {
+      if (currentScrollPos <= 0 && mqM.matches) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("media-nav-img").style.display = "flex";
-        document.getElementById("clearNav").style.paddingLeft = "106px";
+        document.getElementById("nav-logo").style.display = "none";
       } else {
         document.getElementById("navbar").style.top = "-32px";
         document.getElementById("media-nav-img").style.display = "none";
@@ -614,14 +615,12 @@
   </script>
   
   <script>
-    const mqL = window.matchMedia("(min-width: 1024px)");
-    var prevScrollpos = window.pageYOffset;
+    const mqL = window.matchMedia("(min-width:1024px)");
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos <= 0 && mqL.matches) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("nav-logo").style.display = "none";
-        document.getElementById("clearNav").style.paddingLeft = "0";
         } else {
         document.getElementById("navbar").style.top = "-32px";
         document.getElementById("clearNav").style.paddingLeft = "0";
