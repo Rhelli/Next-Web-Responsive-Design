@@ -352,13 +352,15 @@ p, h2, h3, h4, h5, h6 {
 .coverArt-container {
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
   width: 100%;
   height: 60vh;
   max-height: 560px;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  margin-top: 90px;
+  align-items: center;
+  align-content: center;
+  margin: 85px auto 0 auto;
+  left: 5px;
 }
 
 .coverArt-container > div:first-child {
@@ -396,6 +398,10 @@ p, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+.cover-story:hover .cover-trigger {
+  background-color: rgba(0, 0, 0, .1);
+}
+
 .cover-trigger {
   display: block;
   position: absolute;
@@ -420,7 +426,7 @@ p, h2, h3, h4, h5, h6 {
   right: 4px;
   z-index: 3;
   color: #fff;
-  padding: 14px 12px;
+  padding: 20px 20px;
 }
 
 .cover-header h5 {
@@ -468,8 +474,6 @@ p, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   height: 50%;
-  background-color: thistle;
-  border: 1px solid black;
 }
 
 .coverArt2 div {
@@ -480,12 +484,14 @@ p, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   height: 50%;
-  background-color: teal;
-  border: 1px solid black;
 }
 
 .coverArt3 div {
   background-image: url('../Assets/Img/coverArt3.png');
+}
+
+.coverArt-container div:last-child header {
+  width: 85%;
 }
 
 /* MAIN BODY WRAPPER */
