@@ -580,66 +580,6 @@
     </div>
   </body>
 
-  <!-- <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (currentScrollPos <= 0) {
-        document.getElementById("navbar").style.top = "0";
-        document.getElementById("nav-logo").style.display = "none";
-        document.getElementById("clearNav").style.paddingLeft = "0";
-        document.getElementById("media-nav-img").style.display = "flex";
-        document.getElementById("media-nav-img").style.position = "absolute";
-        document.getElementById("media-nav-img").style.left = "0";
-        document.getElementById("media-nav-img").style.zIndex = "11";
-
-      } else {
-        document.getElementById("navbar").style.top = "-32px";
-        document.getElementById("media-nav-img").style.display = "none";
-        document.getElementById("clearNav").style.paddingLeft = "106px";
-        document.getElementById("nav-logo").style.display = "block";
-        document.getElementById("nav-logo").style.position = "absolute";
-        document.getElementById("nav-logo").style.left = "0";
-        document.getElementById("nav-logo").style.zIndex = "20";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  </script> -->
-
-  <!-- <script>
-    const mqM = window.matchMedia("(max-width:1024px)");
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (currentScrollPos <= 0 && mqM.matches) {
-        document.getElementById("navbar").style.top = "0";
-        document.getElementById("media-nav-img").style.display = "flex";
-        document.getElementById("nav-logo").style.display = "none";
-      } else {
-        document.getElementById("navbar").style.top = "-32px";
-        document.getElementById("media-nav-img").style.display = "none";
-        document.getElementById("nav-logo").style.display = "block";
-        document.getElementById("clearNav").style.paddingLeft = "106px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  </script>
-  
-  <script>
-    const mqL = window.matchMedia("(min-width:1024px)");
-    window.onscroll = function screenTest() {
-      var currentScrollPos = window.pageYOffset;
-      if (currentScrollPos <= 0 && mqL.matches) {
-        document.getElementById("navbar").style.top = "0";
-        document.getElementById("nav-logo").style.display = "none";
-        } else {
-        document.getElementById("navbar").style.top = "-32px";
-        document.getElementById("clearNav").style.paddingLeft = "0";
-        document.getElementById("nav-logo").style.display = "block";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  </script> -->
-
     <script>
       const mqL = window.matchMedia("(min-width:1024px)");
       const mqM = window.matchMedia("(min-width:768px) and (max-width:1024px)");
