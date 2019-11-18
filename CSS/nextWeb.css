@@ -363,6 +363,7 @@ p, h2, h3, h4, h5, h6 {
   left: 5px;
 }
 
+/* Main Story */
 .coverArt-container > div:first-child {
   display: inline-flex;
   flex: 1 0 66%;
@@ -370,6 +371,7 @@ p, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+/* Side Stories */
 .coverArt-container > div:last-child {
   display: inline-flex;
   flex-flow: column nowrap;
@@ -378,6 +380,7 @@ p, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+/* Universal Properties */
 .cover-story {
   width: 100%;
   height: 100%;
@@ -431,6 +434,7 @@ p, h2, h3, h4, h5, h6 {
   padding: 20px 20px;
 }
 
+/* Text */
 .cover-header h5 {
   letter-spacing: .04em;
   font-family: 'Shentox', sans-serif;
@@ -462,6 +466,15 @@ p, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: inherit;
 }
+
+.cover-header ul li:first-child {
+  margin-left: 0;
+}
+
+.cover-header ul li:first-child a:hover {
+  color: #fff;
+}
+
 .cover-header a {
   color: #fff;
   text-decoration: none;
@@ -471,6 +484,7 @@ p, h2, h3, h4, h5, h6 {
   background-image: url("../Assets/Img/main-cover.png");
 }
 
+/* Main Story Red Gradient */
 .coverArt1 div:nth-child(3) {
   position: absolute;
   bottom: 4px;
@@ -485,6 +499,7 @@ p, h2, h3, h4, h5, h6 {
   z-index: 4;
 }
 
+/* Main story TNW large logo */
 .coverArt1 div:nth-child(4) {
   position: absolute;
   right: 24px;
@@ -1119,7 +1134,60 @@ b {
   display: none;
 }
 
-/* Cover Stories/Articles Section */
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  width: 100.7%;
+  height: 59vh;
+}
+
+.cover-header {
+  padding: 25px 10px 15px 10px;
+}
+
+/* Main Title */
+.coverArt1 .cover-header h2 {
+  font-size: 2.5em;
+  width: 95%;
+}
+
+/* Side Cover Articles */
+.coverArt-container div:last-child .cover-header h2 {
+  font-size: 1.25em;
+  width: 95%;
+}
+
+.cover-header ul > li {
+  font-family: 'Helvetica Neue Light', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.cover-header ul li i {
+  font-size: 1.5em;
+  margin-right: 4px;
+  position: relative;
+  top: 2px;
+}
+
+/* Disable Article Shares */
+.coverArt-container div:last-child .cover-header ul li:last-child {
+  display: none;
+}
+
+/* Disable Main Story Red Gradient */
+.coverArt1 div:nth-child(3) {
+  display: none;
+}
+
+/* Disable Main story TNW large logo */
+.coverArt1 div:nth-child(4) {
+  display: none;
+}
+
+
+.coverArt-container div:last-child header {
+  width: 95%;
+}
 
 
 /* LATEST NEWS SECTION */
