@@ -1461,6 +1461,86 @@ footer {
   margin-bottom: 30px;
 }
 
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  flex-flow: column nowrap;
+  min-height: 90vh;
+  width: 101%;
+  margin: 50px auto 0 auto;
+}
+
+/* Main Story */
+.coverArt-container > div:first-child {
+  display: flex;
+  flex: 1 0 33%;
+  width: 100%;
+  height: 30vh;
+}
+
+/* Side Stories */
+.coverArt-container > div:last-child {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 66%;
+  width: 100%;
+  height: 60vh;
+}
+
+/* Universal Properties */
+.cover-story {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
+}
+
+.cover-image {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  right: 4px;
+  left: 4px;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 1;
+  will-change: opacity;
+  z-index: 1;
+}
+
+.cover-story:hover .cover-trigger {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.cover-trigger {
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  transition: background-color .4s ease;
+  background: rgba(0, 0, 0, 0.25) url('../Assets/Img/image-gradient.png') no-repeat;
+  background-size: 100% 100%;
+  will-change: background-color;
+  z-index: 2;
+  color: #fff;
+}
+
+.cover-header {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 3;
+  color: #fff;
+  padding: 20px 20px;
+}
+
+
 
 /* LATEST NEWS SECTION */
 
