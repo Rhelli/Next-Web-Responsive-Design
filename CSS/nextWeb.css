@@ -41,7 +41,6 @@ body {
     Arial, sans-serif;
   color: #000;
   margin: 0;
-  padding: 0 15px 0 0;
   text-align: left;
 }
 
@@ -400,13 +399,10 @@ p, h2, h3, h4, h5, h6 {
 .body-wrapper {
   margin: 0 auto;
   max-width: 1192px;
-  padding: 20px;
   background-color: wheat;
 }
 
-.body-wrapper > section {
-  margin-bottom: 25px;
-}
+
 
 /* LATEST-NEWS-SECTION */
 .latest-news-section {
@@ -491,7 +487,6 @@ p, h2, h3, h4, h5, h6 {
   max-width: 1152px;
   margin: 0 auto;
   height: auto;
-  padding: 10px;
 }
 
 .ts {
@@ -856,6 +851,8 @@ p, h2, h3, h4, h5, h6 {
   color: #555;
 }
 
+/* FOOTER */
+
 footer {
   width: 100%;
   background-color: #131313;
@@ -1186,7 +1183,6 @@ b {
   margin-bottom: 30px;
 }
 
-
 /* LATEST NEWS SECTION */
 
 
@@ -1197,38 +1193,35 @@ b {
 .ts {
   flex: 0 0 100%;
   max-width: calc(100% - 10px);
-  min-width: 377px;
 }
 
 /* LATEST DEALS SECTION */
+
+.latest-deals-section {
+  width: auto;
+}
 
 .ld-item {
   flex: 0 0 100%;
   max-width: calc(100% - 10px);
   height: 80px;
+  display: flex;
 }
 
 .ld-picture {
-  display: inline-block;
   width: 75px;
   height: 75px;
 }
 
-.ld-item h4,
-.ld-price {
-  position: relative;
-  left: 90px;
+.ld-item h4 {
   font-weight: 700;
   line-height: 18px;
   font-size: 14px;
-}
-
-.ld-item h4 {
-  bottom: 85px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .ld-price {
-  bottom: 80px;
 }
 
 .ld-price-old {
@@ -1242,4 +1235,35 @@ b {
 
 .ld-discount {
   display: none;
+}
+
+/* FOOTER */
+
+.fl-social {
+  display: flex;
+  flex-flow: wrap;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.fl-social li {
+  padding: 20px 0;
+}
+
+.fl-menu {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 0 0 100%;
+  max-width: calc(100% - 10px);
 }
