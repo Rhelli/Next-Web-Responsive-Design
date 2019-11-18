@@ -50,7 +50,7 @@ ul {
   list-style-type: none;
 }
 
-p, h2, h4 {
+p, h2, h3, h4, h5, h6 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -488,19 +488,164 @@ p, h2, h4 {
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
   height: auto;
-  background: rgb(246, 148, 255);
   padding: 10px;
-  margin: 0;
 }
 
 .ts {
-  flex: 1 0 25%;
-  height: 300px;
-  max-width: calc(33.33% - 10px);
-  margin: 5px;
-  background: rgb(229, 90, 241);
+  flex-basis: calc((100% / 3) - 0px);
+  max-width: calc((100% / 3) - 0px);
+  padding: 12px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.ts-title {
+  margin-bottom: 14px;
+  font-size: 28px;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.015em;
+}
+
+.ts-popular {
+  width: 100%;
+  position: relative;
+  text-rendering: optimizeLegibility;
+}
+
+.ts-popular-image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.ts-popular-gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 232px;
+  bottom: 8px;
+  z-index: 2;
+}
+
+.ts-popular-header {
+  position: absolute;
+  bottom: 0;
+  padding: 14px;
+  z-index: 3;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.ts-popular-header h5 {
+  font-size: 13px;
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.ts-popular-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Avalon';
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.ts-popular-header h3:hover {
+  text-decoration: underline;
+  text-decoration-color: #555;
+}
+
+.ts-popular-header h6 {
+  font-weight: 500;
+  font-family: 'ARS Maquette Regular';
+  font-size: 12px;
+  line-height: 16px;
+  color: hsla(0,0%,100%,.6);
+}
+
+.ts-popular-header h6:hover {
+  color: #fff;
+}
+
+.ts-latest {
+  display: flex;
+  background-color: rgba(255,68,34,.06);
+}
+
+.ts-latest-header {
+  flex: 1;
+  overflow: hidden;
+  padding: 10px 14px 0;
+  color: #f42;
+}
+
+.ts-latest-header h5 {
+  font-size: 13px;
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.ts-latest-header h4 {
+  max-height: 56px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'ARS Maquette Regular';
+}
+
+.ts-latest-header h4:hover {
+  color: #f42;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ts-latest-image {
+  flex: 0 0 96px;
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+}
+
+.ts-headline {
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.ts-headline h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 6px 0 6px 14px;
+  color: #555;
+}
+
+.ts-headline h4:before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
+
+.ts-headline h4:hover {
+  color: #000;
+  cursor: pointer;
 }
 
 /* LATEST DEALS SECTION */
