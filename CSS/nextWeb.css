@@ -1,3 +1,26 @@
+/* TNW Nav Logo Img Entrance */
+@-webkit-keyframes tnw-small{0%{-webkit-transform:translateY(-12px);transform:translateY(-12px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes tnw-small{0%{-webkit-transform:translateY(-12px);transform:translateY(-12px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/* Black Nav Submenu Entrance */
+@-webkit-keyframes blackNavDrop{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes blackNavDrop{0%{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/* Nav Logo DropDown Entrance */
+@keyframes navLogo{0%{transform:translateY(-1000px);opacity:0.9}100%{transform:translateY(0);opacity:1}}
+
+/* Large Nav TNW Logo Entrance */
+@-webkit-keyframes mediaNavAnim{0%{-webkit-transform:translateY(15px);transform:translateY(15px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+@keyframes mediaNavAnim{0%{-webkit-transform:translateY(15px);transform:translateY(15px);opacity:1}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/* Mob Nav Entrance */
+@-webkit-keyframes mobNavEntrance{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@keyframes mobNavEntrance{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+/* Mob Nav Exit */
+@-webkit-keyframes mobNavExit{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
+@keyframes mobNavExit{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
+
 *,
 *::before,
 *::after {
@@ -18,15 +41,12 @@ body {
     Arial, sans-serif;
   color: #000;
   margin: 0;
-  padding: 0;
+  padding: 0 15px 0 0;
   text-align: left;
 }
 
 ul {
   padding-inline-start: 0;
-}
-
-ul {
   list-style-type: none;
 }
 
@@ -36,12 +56,296 @@ p, h2, h4 {
 }
 
 /* NAVBAR */
-nav {
+#navbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  font: 14px/32px 'Shentox', Helvetica, Arial, sans-serif;
   width: 100%;
   height: 80px;
-  background-color: slateblue;
-  border: 2px solid black;
+  transition: top 0.05s;
+  z-index: 10;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  margin: 0;
+  padding: 0;
+}
+
+#navbar > div:nth-child(2) {
+  width: 100%;
+  height: auto;
+}
+
+/* Disable Media Query Nav Logo */
+#media-nav-img {
+  display: none;
+}
+
+#media {
+  display: none;
+  -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: slide-in-bottom 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/* Top Black Nav */
+.black-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  height: 32px !important;
+  width: 100%;
+  background-color: #606060;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  background-color: #121212;
+}
+
+.black-nav > div {
+  margin-left: 12px;
+}
+
+.black-nav div:first-child {
+  margin-left: 19px;
+}
+
+.black-nav div a {
+  font: 13px/32px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff9;
+}
+
+.black-nav div:first-child a {
+  color: #fff;
+}
+
+.black-nav div a:hover {
+  color: #fff;
+}
+
+.black-nav > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+}
+
+.black-nav div:last-child div {
+  margin-right: 12px;
+}
+
+/* Black Nav Drop Down Menus */
+.black-drop {
+  float: left;
+  overflow: hidden;
+}
+
+/* Content */
+.black-drop-content {
+  display: none;
+  position: absolute;
+  top: 32px;
+  background-color: #121212;
+  width: 220px;
+  height: 32px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+  z-index: 20;
+  -webkit-animation: blackNavDrop 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: blackNavDrop 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Arrow shape on-top container */
+.black-drop-content::before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid rgba(0,0,0,.9);
+  content: "";
+  height: 0;
+  left: 32px;
+  margin-left: -6px;
+  position: absolute;
+  top: -6px;
+  width: 0;
+}
+
+/* Links */
+.black-drop-content a {
+  float: none;
+  color: #fff9;
+  background-color: #121212;
+  padding: 0 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.black-drop-content a:hover {
+  color: #fff;
+}
+
+.black-drop:hover .black-drop-content {
+  display: block;
+}
+
+/* CLEAR NAV */
+.clear-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* TNW Overlay Image */
+#nav-img {
+  display: flex;
+  position: relative;
+  height: 48px;
+  width: 106px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 10;
+  background-color: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  will-change: height;
+}
+
+#nav-logo img {
+  display: block;
+  position: relative;
+  color: white;
+  height: 18px;
+  width: 66px;
+  padding: 0;
+  margin: 0;
+  -webkit-animation: tnw-small 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+  animation: tnw-small 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+#nav-logo {
+  display: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #121212;
+}
+
+/* Logo Dropdown Container */
+.logo-drop {
+  float: left;
+  overflow: hidden;
+}
+
+.logo-drop .logo-content {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Logo Hover Gif */
+#nav-logo:hover #nav-img {
+  background: url('/Assets/Img/logo-gif.gif') 50%;
+  background-size: cover;
+}
+
+/* Logo Dropdown Content */
+.logo-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background-color: #121212;
+  min-width: 106px;
+  height: 31px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4);
+  z-index: 9;
+}
+
+.logo-content a {
+  float: none;
+  font: 0.9em/31px 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
+  color: #fff9;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background: #121212;
+}
+
+.logo-content a:hover {
+  color: #fff;
+}
+
+#nav-logo:hover .logo-content {
+  display: block;
+  animation: navLogo 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+}
+
+/* Clear Nav Links */
+.clear-nav > div:nth-child(2) a {
+  text-decoration: none;
+  color: #aaa;
+  font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
+  padding: 18px 10px 0;
+}
+
+/* First Clear Nav Link (Latest) */
+.clear-nav > div:nth-child(2) a:first-child {
+  padding: 18px 10px 0 20px;
+}
+
+.clear-nav > div:nth-child(2) a:hover {
+  color: #333;
+}
+
+/* Clear Nav Search Icon */
+.clear-nav > div:nth-child(3) {
+  border-left: 1px solid #d0d0d0;
+  float: left
+}
+
+.clear-nav > div:nth-child(3) {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 48px;
+  padding: 0;
+  margin: 0;
+  opacity: 0.25;
+  will-change: opacity;
+  margin-left: auto;
+  padding: 10px 0 0 15px
+}
+
+.clear-nav > div:nth-child(3) a i {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  transform: scaleX(-1);
+}
+
+.clear-nav > div:nth-child(3):hover {
+  opacity: 0.5;
+}
+
+/* Mobile Nav Disable */
+.clear-nav > div:last-child {
+  display: none;
+}
+
+#mobNav {
+  display: none;
 }
 
 /* COVER STORIES/ARTICLES */
@@ -56,6 +360,7 @@ nav {
   align-content: flex-start;
   background-color: tan;
   border: 1px solid black;
+  margin-top: 90px;
 }
 
 .coverArt-container > div:first-child {
@@ -269,6 +574,70 @@ nav {
   object-fit: cover;
   margin-bottom: 8px;
 }
+.search-page {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Laptops & Other Large Devices */
+@media screen and  (max-width: 1024px) {
+
+/* NAVBAR */
+#navbar {
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+/* Disable Media Query Nav Logo */
+#media-nav-img {
+  display: inline-block;
+  height: 80px;
+  width: 121px;
+  background-color: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  margin: 0;
+  padding: 0;
+}
+
+#media-nav-img:hover {
+  background: url('/Assets/Img/logo-gif.gif') 50%;
+  background-size: cover;
+}
+
+#media-nav-img a {
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 28px 10px;
+}
+
+#mediaNavAnim {
+  width: 85px;
+  height: 15px;
+}
+
+#mediaNavAnim {
+  -webkit-animation: mediaNavAnim 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: mediaNavAnim 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.black-nav > div:last-child {
+  display: none;
+}
+
+/* Cover Stories/Articles Section */
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
 
 .ld-discount {
   background-image: url(../Assets/Img/deals-ribbon.svg);
@@ -360,6 +729,192 @@ footer {
   text-align: center;
   width: 40px;
 }
+
+/* Tablets & Medium Devices */
+@media screen and (max-width: 768px) {
+/* NAVBAR */
+#navbar {
+  flex-flow: row nowrap;
+  height: 48px;
+}
+
+/* Disable Media Query Nav Logo */
+#media-nav-img {
+  display: none;
+}
+
+/* Disable Black Nav */
+.black-nav {
+  display: none;
+}
+
+/* TNW Overlay Image */
+#nav-logo img {
+  animation: none;
+}
+
+#nav-logo {
+  display: inline-block;
+}
+
+/* Logo Hover Gif */
+#nav-logo:hover #nav-img {
+  background: url('/Assets/Img/logo-gif.gif') 50%;
+  background-size: cover;
+}
+
+#nav-logo:hover .logo-content {
+  display: none;
+}
+
+/* Disable Clear Nav Links */
+.clear-nav > div:nth-child(2) {
+  display: none;
+}
+
+/* Enable Hamburger Icon */
+.clear-nav > div:last-child {
+  display: inline-block;
+  width: 48px;
+  height: 100%;
+  padding: 12px 15px 0 10px;
+  border-left: 1px solid #eee;
+}
+
+.clear-nav > div:last-child button {
+  text-decoration: none;
+  color: #ff4422;
+  font-size: 1.6em;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Pop-Out Mobile Nav */
+#mobNav {
+  display: none;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: 1em/100% 'Shentox', Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  -webkit-animation: mobNavEntrance 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: mobNavEntrance 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+#mobNav > div:first-child {
+  height: 48px;
+  width: 100vw;
+}
+
+#mobNav > div:first-child button {
+  display: block;
+  height: 48px;
+  width: 48px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 15px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+}
+
+.mob-nav-top {
+  display: block;
+  width: 100vw;
+  height: 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+.mob-nav-top > ul {
+  display: inline;
+  list-style: none;
+}
+
+.mob-nav-top ul > li {
+  float: left;
+  position: relative;
+  left: 15%;
+  height: 48px;
+  margin-bottom: 0;
+  text-align: center;
+  width: 8%;
+  margin-top: 10px;
+}
+
+.mob-nav-top ul > li a {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.mob-nav-top ul > li a i {
+  font-size: 1.3em;
+}
+
+.mob-nav-bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 100vw;
+  height: auto;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+.mob-nav-bottom a {
+  font: 1.1em/170% 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: rgba(255, 255, 255, .6);
+}
+
+.links-left {
+  display: block;
+  width: 48%;
+  height: auto;
+}
+
+.mob-nav-bottom h5 {
+  font: 1.2em/100% 'Shentox';
+  margin: 0;
+  margin-top: 18px;
+}
+
+.links-right {
+  display: block;
+  width: 48%;
+  height: auto;
+}
+
+.links-right ul li:last-child {
+  margin-bottom: 30px;
+}
+
+
+/* LATEST NEWS SECTION */
+
+
+/* LATEST FUNDING SECTION */
+
+
+/* TOPICS SECTION */
+
+
+/* LATEST DEALS SECTION */
+
+
+/* FOOTER */
 
 .fl-social a:hover {
   background-color: black;

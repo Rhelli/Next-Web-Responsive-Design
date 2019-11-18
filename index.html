@@ -14,6 +14,507 @@
   </head>
   <body>
 
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div id="media-nav-img">
+        <a href="#" title="The Next Web">
+          <img id="mediaNavAnim" src="Assets/Img/tnw.svg" alt="The Next Web">
+        </a>
+      </div>
+      <!-- Top (Black) Nav Content -->
+      <div>
+        <div class="black-nav">
+        <div><a href="https://index.co/" title="News">News</a></div>
+        <div class="black-drop">
+          <a href="#">Events ▾</a>
+            <div class="black-drop-content">
+              <a href="https://thenextweb.com/bowlr/" title="Bowlr 2019">Bowlr 2019</a>
+              <a href="https://thenextweb.com/conference/" title="TNW2020">TNW2020</a>
+            </div>
+        </div>
+        <div class="black-drop">
+          <a href="https://thenextweb.com/conference/" title="Events">Business ▾</a>
+            <div class="black-drop-content">
+              <a href="https://thenextweb.com/x/" title="TNW X">TNW X</a>
+              <a href="https://index.co/" title="Index">Index</a>
+            </div>
+        </div>
+        <div><a href="https://answers.thenextweb.com/" title="Answers">AMAs</a></div>
+        <div><a href="https://tq.co/" title="Spaces">Spaces</a></div>
+        <div><a href="https://thenextweb.com/terms-and-conditions/">Terms & Conditions</a></div>
+        <!-- Right Side Nav Sections -->
+        <div>
+          <div><a href="https://thenextweb.com/about" title="About">About</a></div>
+          <div><a href="https://thenextweb.com/team" title="Team">Team</a></div>
+          <div><a href="https://thenextweb.com/advertise" title="Advertise">Advertise</a></div>
+          <div><a href="https://thenextweb.homerun.co/" title="Jobs">Jobs</a></div>
+          <div><a href="https://thenextweb.com/contact" title="Contact">Contact</a></div>
+        </div>
+        </div>
+        <!-- Main (White) Nav Content -->
+        <div class="clear-nav">
+          <!-- Nav Logo -->
+          <div id="nav-logo">
+            <a id="nav-img" href="#">
+              <img src="Assets/Img/tnw.svg" alt="The Next Web">
+            </a>
+            <!-- Logo Drop Down Menu -->
+            <div class="logo-drop">
+              <div class="logo-content">
+                <a href="https://thenextweb.com/">News</a>
+                <a href="https://thenextweb.com/conference/">Events</a>
+                <a href="https://index.co/">Index</a>
+                <a href="https://tq.co/">TQ</a>
+                <a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&utm_medium=referral&utm_campaign=navbar">Deals</a>
+                <a href="https://answers.thenextweb.com/">Answers</a>
+                <a href="https://thenextweb.com/x/">TNW X</a>
+              </div>
+            </div>
+          </div>
+          <!-- Nav sections -->
+          <div id="clearNav">
+            <a href="https://thenextweb.com/latest" title="Latest">LATEST</a>
+            <a href="https://thenextweb.com/hardfork" title="Hard Fork">HARD FORK</a>
+            <a href="https://thenextweb.com/plugged" title="Plugged">PLUGGED</a>
+            <a href="https://thenextweb.com/adobe-fundamentals" title="Fundamentals">FUNDAMENTALS</a>
+            <a href="https://thenextweb.com/work2030" title="Work 2030">WORK 2030</a>
+          </div>
+          <!-- Search Icon -->
+          <div>
+            <a id="open-search" href="#"><i class="fas fa-search"></i></a>
+          </div>
+          <div>
+            <button id="hamburger-mob" onclick="showMobNav()"><i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Nav -->
+      <div id="mobNav">
+        <div>
+          <a id="close-mob-nav" href="#">
+            <button onclick="hideMobNav()">
+              <i class="fas fa-times fa-2x"></i>
+            </button>
+          </a>
+        </div>
+        <div class="mob-nav-top">
+          <ul>
+            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com/thenextweb" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://twitter.com/thenextweb" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://pinterest.com/thenextweb" title="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed"><i class="fas fa-rss"></i></a></li>
+          </ul>
+        </div>
+        <div class="mob-nav-bottom">
+          <div class="links-left">
+            <h5>Sections</h5>
+            <ul>
+              <li><a href="https://thenextweb.com/latest">Latest</a></li>
+              <li><a href="https://thenextweb.com/section/insights">Insights</a></li>
+              <li><a href="https://thenextweb.com/bowlr/">Bowlr 2019</a></li>
+              <li><a href="https://thenextweb.com/plugged/">Plugged</a></li>
+              <li><a href="https://thenextweb.com/adobe-fundamentals/">Fundamentals</a></li>
+              <li><a href="https://thenextweb.com/work2030/">Work 2030</a></li>
+            </ul>
+          </div>
+          <div class="links-right">
+            <h5>About TNW</h5>
+            <ul>
+              <li><a href="https://thenextweb.com/about">About</a></li>
+              <li><a href="https://thenextweb.com/team">Team</a></li>
+              <li><a href="https://tnwads.typeform.com/to/ofLLXt">Advertise</a></li>
+              <li><a href="https://thenextweb.com/jobs">Jobs</a></li>
+              <li><a href="https://thenextweb.com/about#contact">Contact</a></li>
+              <li><a href="https://thenextweb.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+            </ul>
+            <h5>TNW Sites</h5>
+            <ul class="nav-mob-menu">
+              <li><a href="https://thenextweb.com/news">News</a></li>
+              <li><a href="https://thenextweb.com//conference/">TNW 2020</a></li>
+              <li><a href="https://thenextweb.com//bowlr/">Bowlr 2019</a></li>
+              <li><a href="https://index.co/">Index</a></li>
+              <li><a href="https://tq.co/">TQ</a></li>
+              <li><a href="http://deals.thenextweb.com/">Deals</a></li>
+              <li><a href="https://answers.thenextweb.com/">Answers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- MAIN BODY -->
+    <main>
+
+
+
+      <!-- Cover Stories/Articles Section -->
+      <section class="coverArt-container" id="cover-articles">
+        <div>
+          <article class="coverArt1">Cover Art 1
+            <div>
+            </div>
+            <a href="#"></a>
+            <div></div>
+            <div></div>
+            <div></div>
+            <header>
+              <h5></h5>
+              <h2></h2>
+              <ul>
+                <li><a href="#"></a></>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </header>
+          </article>
+        </li>
+        <div>
+          <article class="coverArt2">Cover Art 2
+            <div></div>
+            <a href="#"></a>
+            <header>
+              <h5></h5>
+              <h2></h2>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </header>
+          </article>
+          <article class="coverArt3">Cover Art 3
+            <div></div>
+            <a href="#"></a>
+            <header>
+              <h5></h5>
+              <h2></h2>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </header>
+          </article>
+        </div>
+      </section>
+
+
+
+        <!-- MAIN BODY CONTAINER -->
+        <div class="body-wrapper">
+
+
+
+          <!-- LATEST NEWS SECTION -->
+          <section class="latest-news-section">
+            <ul class="latest-news">
+              <li class="ln-item">li01</li>
+              <li class="ln-item">li02</li>
+              <li class="ln-item">li03</li>
+              <li class="ln-item">li04</li>
+              <li class="ln-item">li05</li>
+              <li class="ln-item">li06</li>
+              <li class="ln-item">li07</li>
+              <li class="ln-item">li08</li>
+            </ul>
+          </section>
+
+
+
+          <!-- LATEST FUNDING SECTION -->
+          <section class="funding-section">
+              <header>Header
+                <h2>
+                  <a href="#"></a>
+                </h2>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </header>
+              
+              <!-- Cards -->
+              <div class="fCard-container">
+                <div class="fCard1">fCard1
+                  <div>
+                    <a href="#"></a>
+                    <div>
+                      <a href="#"></a>
+                      <a href="#"></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="fCard2">fCard2
+                  <div>
+                    <a href="#"></a>
+                    <div>
+                      <a href="#"></a>
+                      <a href="#"></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="fCard2">fCard3
+                  <div>
+                    <a href="#"></a>
+                    <div>
+                      <a href="#"></a>
+                      <a href="#"></a>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                  <div class="fCard2">fCard4
+                    <div>
+                      <a href="#"></a>
+                      <div>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+
+
+          <!-- TOPICS SECTION -->
+          <div class="topics-section-container">
+              <section  class="ts">section01
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section02
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section03
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section04
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section05
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section06
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section07
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+              <section  class="ts">section08
+                  <h2 class="ts-title"></h2>
+                  <ul>
+                    <li class="ts-mostpopular">ts-mostpopular
+                      <article>
+                        <img src="" alt="">
+                        <header>
+                          <h5></h5>
+                          <h3></h3>
+                          <h6></h6>
+                        </header>
+                      </article>
+                    </li>
+                    <li class="ts-latest">ts-latest
+                      <article>
+                        <header></header>
+                        <img src="" alt="">
+                      </article>
+                    </li>
+                    <li class="ts-item01">ts-item01</li>
+                    <li class="ts-item02">ts-item02</li>
+                    <li class="ts-item03">ts-item03</li>
+                    <li class="ts-item04">ts-item04</li>
+                    <li class="ts-item05">ts-item05</li>
+                  </ul>
+              </section>
+          </div>
        
           <!-- LATEST DEALS SECTION -->
           <section class="latest-deals-section">
@@ -126,5 +627,88 @@
       </div>
     </footer>
 
+    <!-- Navbar Search Page -->
+    <div class="search-page">
+      <header>
+        <a href="#">
+          <img alt="The Next Web" src="Assets/Img/tnw-red.svg">
+        </a>
+        <a href="#">
+          <i class="fas fa-times"></i>
+        </a>
+      </header>
+      <form method="get">
+        <input autocomplete="off" placeholder="Search" type="text">
+        <a href="#"><i class="fas fa-times-circle"></i></a>
+      </form>
+      <div></div>
+      <div>
+        <div>
+          <span>↑</span>
+          <span>↓</span>
+          <span><p>Navigate up/down</p></span>
+        </div>
+      </div>
+      <div>
+        <span>Enter</span>
+        <span>Go to article</span>
+      </div>
+      <div>
+        <span>/</span>
+        <span>Search new term</span>
+      </div>
+      <div>
+        <span>Esc</span>
+        <span>Close search</span>
+      </div>
+    </div>
   </body>
+
+    <script>
+      const mqL = window.matchMedia("(min-width:1024px)");
+      const mqM = window.matchMedia("(min-width:768px) and (max-width:1024px)");
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (mqL.matches) {
+          if (currentScrollPos <= 0) {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("nav-logo").style.display = "none";
+          } else {
+            document.getElementById("navbar").style.top = "-32px";
+            document.getElementById("clearNav").style.paddingLeft = "0";
+            document.getElementById("nav-logo").style.display = "block";
+          }
+        }
+        if (mqM.matches) {
+          if (currentScrollPos <= 0 && mqM.matches) {
+          document.getElementById("navbar").style.top = "0";
+          document.getElementById("media-nav-img").style.display = "flex";
+          document.getElementById("nav-logo").style.display = "none";
+          } else {
+          document.getElementById("navbar").style.top = "-32px";
+          document.getElementById("media-nav-img").style.display = "none";
+          document.getElementById("nav-logo").style.display = "block";
+        } 
+      }
+      prevScrollpos = currentScrollPos;
+      }
+    </script>
+    <script>
+      function showMobNav() {
+        var x = document.getElementById("mobNav");
+        if (x.style.display == "none") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function hideMobNav() {
+        var j = document.getElementById("mobNav");
+        if (j.style.display == "flex") {
+          j.style.display = "none";
+        } else {
+          j.style.display = "flex";
+        }
+      }      
+    </script>
 </html>
