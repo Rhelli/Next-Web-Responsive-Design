@@ -622,6 +622,67 @@ p, h2, h3, h4, h5, h6 {
   background: rgb(129, 41, 41);
 }
 
+.ln-image {
+  display: block;
+  opacity: 1;
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  overflow: hidden;
+  padding-top: 50%;
+  width: 100%;
+  margin-bottom: 8px;
+  position: relative;
+  will-change: opacity;
+  transition: .4s opacity;
+}
+
+.ln-title {
+  font: 1em/16px 'ARS Maquette', sans-serif;
+  margin-bottom: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.ln-byline {
+  color: #aaa;
+  font-size: 0.9em;
+  line-height: 20px;
+}
+
+.ln-item:first-child div a {
+  background-image: url('../Assets/Img/ln-item01.jpg');
+}
+
+.ln-item:nth-child(2) div a {
+  background-image: url('../Assets/Img/ln-item02.jpg');
+}
+
+.ln-item:nth-child(3) div a {
+  background-image: url('../Assets/Img/ln-item03.jpg');  
+}
+
+.ln-item:nth-child(4) div a {
+  background-image: url('../Assets/Img/ln-item04.jpg');  
+}
+
+.ln-item:nth-child(5) div a {
+  background-image: url('../Assets/Img/ln-item05.jpg');  
+}
+
+.ln-item:nth-child(6) div a {
+  background-image: url('../Assets/Img/ln-item06.png');  
+}
+
+.ln-item:nth-child(7) div a {
+  background-image: url('../Assets/Img/ln-item07.jpg');  
+}
+
+.ln-item:last-child div a {
+  background-image: url('../Assets/Img/ln-item08.jpg');
+}
 
 
 /* FUNDING SECTION */
