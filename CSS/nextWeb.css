@@ -392,9 +392,11 @@ p, h2, h3, h4, h5, h6 {
   bottom: 4px;
   right: 4px;
   left: 4px;
-  background-color: #909090;
+  background-color: #000;
   background-size: cover;
   background-position: 50%;
+  opacity: 1;
+  will-change: opacity;
   z-index: 1;
 }
 
@@ -438,7 +440,6 @@ p, h2, h3, h4, h5, h6 {
 
 .cover-header h2 {
   margin-bottom: 0.2em;
-  text-decoration: none;
   line-height: 100%;
   font-family: 'Avalon', sans-serif;
 }
@@ -461,9 +462,43 @@ p, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: inherit;
 }
+.cover-header a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .coverArt1 div {
   background-image: url("../Assets/Img/main-cover.png");
+}
+
+.coverArt1 div:nth-child(3) {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+  pointer-events: none;
+  background: transparent url('../Assets/Img/red-cover-gradient.png') no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  mix-blend-mode: lighten;
+  z-index: 4;
+}
+
+.coverArt1 div:nth-child(4) {
+  position: absolute;
+  right: 24px;
+  color: #fff;
+  background: transparent url('../Assets/Img/tnw-cover-logo.svg') no-repeat;
+  background-size: contain;
+  left: 24px;
+  max-width: 50%;
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  top: 24px;
+  pointer-events: none;
+  z-index: 5;
 }
 
 .coverArt1 .cover-header h2 {
@@ -498,7 +533,6 @@ p, h2, h3, h4, h5, h6 {
 .body-wrapper {
   margin: 0 auto;
   max-width: 1192px;
-  padding: 20px;
   background-color: wheat;
 }
 
@@ -1095,7 +1129,7 @@ b {
 
 
 /* TOPICS SECTION */
-
+}
 
 .ld-discount {
   background-image: url(../Assets/Img/deals-ribbon.svg);
@@ -1115,14 +1149,14 @@ b {
 
 .ld-discount p {
   transform: rotate(45deg);
-    font-size: 14px;
-    font-weight: 700;
-    left: 8px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: 20px;
-    width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
 }
 
 .ld-item > h4 {
@@ -1425,4 +1459,6 @@ footer {
 
 b {
   color: #f42;
+}
+
 }
