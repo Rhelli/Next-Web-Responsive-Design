@@ -362,20 +362,21 @@ p, h2, h3, h4, h5, h6 {
 }
 
 .coverArt-container > div:first-child {
-  display: inline-block;
+  display: inline-flex;
   flex: 1 0 66%;
+  width: 66%;
   height: 100%;
 }
 
-.coverArt-container div:last-child {
+.coverArt-container > div:last-child {
   display: inline-flex;
   flex-flow: column nowrap;
   flex: 1 0 33%;
+  width: 33%;
   height: 100%;
 }
 
 .cover-story {
-  float: left;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -411,32 +412,77 @@ p, h2, h3, h4, h5, h6 {
 }
 
 .cover-header {
-  
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 3;
+  color: #fff;
+  padding: 14px 12px;
+}
+
+.cover-header h5 {
+  letter-spacing: .04em;
+  font-family: 'Shentox', sans-serif;
+  font-weight: 300;
+  font-size: 0.88em;
+}
+
+.cover-header h2 {
+  margin-bottom: 0.2em;
+  text-decoration: none;
+  line-height: 100%;
+  font-family: 'Avalon', sans-serif;
+}
+
+.cover-header ul {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82em;
+  line-height: 16px;
+  display: inline;
+  list-style: none;
+}
+
+.cover-header ul li {
+  display: inline;
+  margin-left: 5px;;
+  font: 'ARS Maquette Regular', sans-serif;
+}
+
+.cover-header ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .coverArt1 div {
   background-image: url("../Assets/Img/main-cover.png");
 }
 
-/* .coverArt2 {
+.coverArt1 .cover-header h2 {
+  font-size: 3.5em;
+}
+
+.coverArt2 {
   display: block;
   width: 100%;
   height: 50%;
   background-color: thistle;
   border: 1px solid black;
-} */
+}
 
 .coverArt2 div {
   background-image: url('../Assets/Img/coverArt2.png');
 }
 
-/* .coverArt3 {
+.coverArt3 {
   display: block;
   width: 100%;
   height: 50%;
   background-color: teal;
   border: 1px solid black;
-} */
+}
 
 .coverArt3 div {
   background-image: url('../Assets/Img/coverArt3.png');
