@@ -670,7 +670,8 @@ p, h2, h3, h4, h5, h6 {
   letter-spacing: -.015em;
 }
 
-.ld-header h2::after {
+.ld-header h2::after,
+.ts-title::after {
   background-image: url(../Assets/Img/download.svg);
   background-size: 16px 16px;
   content: "";
@@ -683,7 +684,8 @@ p, h2, h3, h4, h5, h6 {
 }
 
 .ld-header h2:hover,
-.ld-header span:hover {
+.ld-header span:hover,
+.ts-title:hover {
   color: #000;
 }
 
