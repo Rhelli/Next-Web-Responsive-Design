@@ -351,48 +351,196 @@ p, h2, h3, h4, h5, h6 {
 .coverArt-container {
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
   width: 100%;
   height: 60vh;
   max-height: 560px;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  background-color: tan;
-  border: 1px solid black;
-  margin-top: 90px;
+  align-items: center;
+  align-content: center;
+  margin: 85px auto 0 auto;
+  left: 5px;
 }
 
+/* Main Story */
 .coverArt-container > div:first-child {
-  display: inline-block;
-  flex: 1 0 65%;
+  display: inline-flex;
+  flex: 1 0 66%;
+  width: 66%;
   height: 100%;
-  background-color: steelblue;
-  border: 1px solid black;
 }
 
-.coverArt-container div:last-child {
+/* Side Stories */
+.coverArt-container > div:last-child {
   display: inline-flex;
   flex-flow: column nowrap;
-  flex: 1 0 35%;
+  flex: 1 0 33%;
+  width: 33%;
   height: 100%;
-  background-color: slategray;
-  border: 1px solid black;
+}
+
+/* Universal Properties */
+.cover-story {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
+}
+
+.cover-image {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  right: 4px;
+  left: 4px;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 1;
+  will-change: opacity;
+  z-index: 1;
+}
+
+.cover-story:hover .cover-trigger {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.cover-trigger {
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  transition: background-color .4s ease;
+  background: rgba(0, 0, 0, 0.25) url('../Assets/Img/image-gradient.png') no-repeat;
+  background-size: 100% 100%;
+  will-change: background-color;
+  z-index: 2;
+  color: #fff;
+}
+
+.cover-header {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 3;
+  color: #fff;
+  padding: 20px 20px;
+}
+
+/* Text */
+.cover-header h5 {
+  letter-spacing: .04em;
+  font-family: 'Shentox', sans-serif;
+  font-weight: 300;
+  font-size: 0.88em;
+}
+
+.cover-header h2 {
+  margin-bottom: 0.2em;
+  line-height: 100%;
+  font-family: 'Avalon', sans-serif;
+}
+
+.cover-header ul {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82em;
+  line-height: 16px;
+  display: inline;
+  list-style: none;
+}
+
+.cover-header ul li {
+  display: inline;
+  margin-left: 5px;;
+  font: 'ARS Maquette Regular', sans-serif;
+}
+
+.cover-header ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cover-header ul li:first-child {
+  margin-left: 0;
+}
+
+.cover-header ul li:first-child a:hover {
+  color: #fff;
+}
+
+.cover-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.coverArt1 div {
+  background-image: url("../Assets/Img/main-cover.png");
+}
+
+/* Main Story Red Gradient */
+.coverArt1 div:nth-child(3) {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+  pointer-events: none;
+  background: transparent url('../Assets/Img/red-cover-gradient.png') no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  mix-blend-mode: lighten;
+  z-index: 4;
+}
+
+/* Main story TNW large logo */
+.coverArt1 div:nth-child(4) {
+  position: absolute;
+  right: 24px;
+  color: #fff;
+  background: transparent url('../Assets/Img/tnw-cover-logo.svg') no-repeat;
+  background-size: contain;
+  left: 24px;
+  max-width: 50%;
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  top: 24px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.coverArt1 .cover-header h2 {
+  font-size: 3.5em;
 }
 
 .coverArt2 {
   display: block;
   width: 100%;
   height: 50%;
-  background-color: thistle;
-  border: 1px solid black;
+}
+
+.coverArt2 div {
+  background-image: url('../Assets/Img/coverArt2.png');
 }
 
 .coverArt3 {
   display: block;
   width: 100%;
   height: 50%;
-  background-color: teal;
-  border: 1px solid black;
+}
+
+.coverArt3 div {
+  background-image: url('../Assets/Img/coverArt3.png');
+}
+
+.coverArt-container div:last-child header {
+  width: 85%;
 }
 
 /* MAIN BODY WRAPPER */
@@ -987,7 +1135,60 @@ b {
   display: none;
 }
 
-/* Cover Stories/Articles Section */
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  width: 100%;
+  height: 59vh;
+}
+
+.cover-header {
+  padding: 25px 10px 15px 10px;
+}
+
+/* Main Title */
+.coverArt1 .cover-header h2 {
+  font-size: 2.5em;
+  width: 95%;
+}
+
+/* Side Cover Articles */
+.coverArt-container div:last-child .cover-header h2 {
+  font-size: 1.25em;
+  width: 95%;
+}
+
+.cover-header ul > li {
+  font-family: 'Helvetica Neue Light', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.cover-header ul li i {
+  font-size: 1.5em;
+  margin-right: 4px;
+  position: relative;
+  top: 2px;
+}
+
+/* Disable Article Shares */
+.coverArt-container div:last-child .cover-header ul li:last-child {
+  display: none;
+}
+
+/* Disable Main Story Red Gradient */
+.coverArt1 div:nth-child(3) {
+  display: none;
+}
+
+/* Disable Main story TNW large logo */
+.coverArt1 div:nth-child(4) {
+  display: none;
+}
+
+
+.coverArt-container div:last-child header {
+  width: 95%;
+}
 
 
 /* LATEST NEWS SECTION */
@@ -1002,6 +1203,80 @@ b {
   max-width: calc(50% - 10px);
 }
 
+.ld-discount {
+  background-image: url(../Assets/Img/deals-ribbon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  display: block;
+  height: 80px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  z-index: 10;
+}
+
+.ld-discount p {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+.ld-item > h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.ld-item h4:hover {
+  color: #f42;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ld-price {
+  padding-top: 4px;
+}
+
+.ld-price-old {
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 4px;
+  color: #aaa;
+}
+
+.ld-price-new {
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-right: 4px;
+  color: #555;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #131313;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 300;  
+}
+
 /* LATEST DEALS SECTION */
 .latest-deals {
   justify-content: flex-start;
@@ -1012,8 +1287,10 @@ b {
   max-width: calc(33.333% - 10px);
 }
 
+}
 /* Tablets & Medium Devices */
 @media screen and (max-width: 768px) {
+
 /* NAVBAR */
 #navbar {
   flex-flow: row nowrap;
@@ -1183,6 +1460,59 @@ b {
   margin-bottom: 30px;
 }
 
+/* COVER STORIES/ARTICLES */
+.coverArt-container {
+  flex-flow: column nowrap;
+  min-height: 90vh;
+  width: 100%;
+  margin: 52px auto 0 auto;
+}
+
+/* Main Story */
+.coverArt-container > div:first-child {
+  display: flex;
+  flex: 1 0 33%;
+  width: 100%;
+  height: 30vh;
+}
+
+/* Side Stories */
+.coverArt-container > div:last-child {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 66%;
+  width: 100%;
+  height: 60vh;
+}
+
+.coverArt-container > div .cover-header h2 {
+  font-size: 1.25em;
+  margin: 4px 0;
+}
+
+.cover-header {
+  padding: 14px 10px;
+}
+
+/* Text */
+.coverArt-container > div .cover-header h5 {
+  font-size: 0.8em;
+  color: #fff9;
+}
+
+/*  Disable Main Story Red Gradient */
+.coverArt1 div:nth-child(3) {
+  display: none;
+}
+
+/* Disable Main story TNW large logo */
+.coverArt1 div:nth-child(4) {
+  display: none;
+}
+
+
+
+
 /* LATEST NEWS SECTION */
 
 
@@ -1220,9 +1550,10 @@ b {
   width: 100%;
   padding-left: 20px;
 }
-
+/* 
 .ld-price {
-}
+
+} */
 
 .ld-price-old {
   font-size: 11px;
@@ -1266,4 +1597,10 @@ b {
   text-align: center;
   flex: 0 0 100%;
   max-width: calc(100% - 10px);
+}
+
+b {
+  color: #f42;
+}
+
 }
