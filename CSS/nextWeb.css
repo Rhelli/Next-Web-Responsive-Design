@@ -730,11 +730,81 @@ p, h2, h3, h4, h5, h6 {
 
 .funding-section header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   height: auto;
+  margin-bottom: 24px;
+  margin-left: 10px;
+}
+
+.funding-section header h2 a {
+  line-height: 32px;
+  color: #f42;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: 'Avalon', sans-serif;
+  text-decoration: none;
+}
+
+.funding-section header h2 a:hover {
+  color: #000;
+}
+
+.funding-section header h2 span::after {
+  background-image: url(../Assets/Img/download.svg);
+  background-size: 16px 16px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 0;
+  width: 16px;
+}
+
+.funding-section header h2:hover span::after {
+  background-image: url('../Assets/Img/subtitle-arrow-black.svg');
+}
+
+.funding-section > header div:last-child {
+  display: flex;
+  width: auto;
+  position: relative;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+}
+
+.funding-section > header div:last-child a {
+  text-decoration: none;
+  color: #f42;
+  margin-right: 23px;
+  line-height: 18px;
+}
+
+.funding-section > header div:last-child a:hover {
+  color: #000;
+}
+
+.funding-section > header div:last-child a::after {
+  display: inline-block;
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+  pointer-events: none;
+  position: absolute;
+}
+
+.funding-section > header div:last-child a:hover::after {
+  color: #f42;
+}
+
+.funding-section > header div:last-child a:last-child::after {
+  content: "";
 }
 
 .fCard-container {
@@ -806,6 +876,7 @@ p, h2, h3, h4, h5, h6 {
 }
 
 .fCard-top div h4 {
+  font-family: 'Avalon', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.25;
@@ -1085,7 +1156,6 @@ p, h2, h3, h4, h5, h6 {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
-
   padding: 10px;
   margin: 0;
 }
