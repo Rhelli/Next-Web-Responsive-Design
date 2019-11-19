@@ -726,8 +726,6 @@ p, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   width: auto;
   height: auto;
-  background-color: tomato;
-  border: 1px solid black;
 }
 
 .funding-section header {
@@ -737,8 +735,6 @@ p, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: yellowgreen;
-  border: 1px solid black;
 }
 
 .fCard-container {
@@ -748,19 +744,126 @@ p, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   width: 100%;
   height: auto;
+  margin-bottom: 4em;
 }
 
 .fCard-container > div {
   display: flex;
+  position: relative;
   flex-flow: column nowrap;
   justify-content: center;
   align-content: flex-start;
   align-items: center;
-  flex: 1 0 calc(25% - 40px);
-  height: 287px;
+  flex: 1 0 25%;
+  min-height: 60px;
   max-width: 25%;
-  margin: 10px 10px;
-  border: 1px solid black;
+  padding: 12px;
+}
+
+.fStory {
+  background: #fffaf8;
+}
+
+.fStory a {
+  text-decoration: none;
+}
+
+.fCard-top {
+  display: block;
+  position: relative;
+}
+
+.fCard-top img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 10.6px;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 10;
+  border: none;
+}
+
+.fCard-org {
+  background-color: #f42;
+  color: #fff;
+  padding: 10.6px 16px 10.6px 84px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fCard-top div {
+  display: block;
+  padding: 10.6px 16px 10.6px 84px;
+  color: #000;
+  background: rgba(255, 68, 34, .08);
+  margin: 0;
+}
+
+.fCard-top div h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #000;
+  margin: 0;
+}
+
+.fCard-top div h5 {
+  color: #000;
+  opacity: .5;
+  font-size: 11px;
+  font-family: 'Shentox', sans-serif;
+  font-weight: 500;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.fCard-invest {
+  padding: 16px;
+}
+
+.fCard-invest > a {
+  display: block;
+  line-height: 22px;
+  padding-left: 2em;
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+.fCard-invest:not(:last-child) {
+  margin-bottom: .5em;
+}
+
+.fCard-invest > a > i {
+  display: block;
+  font-size: 1.23em;
+  position: absolute;
+  top: .2em;
+  left: 0;
+  opacity: 0.9;
+}
+
+.fStory ul {
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 68, 34, .25);
+  padding-top: 10px;
+  padding: 16px;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fStory ul a {
+  text-decoration: none;
+  color: #aaa;
 }
 
 /* TOPICS SECTION */
