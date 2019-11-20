@@ -23,9 +23,21 @@ Our project can be found at https://github.com/Rhelli/Next-Web-Responsive-Design
 
 ### ✨ [Link to Live Site](https://rawcdn.githack.com/Rhelli/Next-Web-Responsive-Design/6a8d13c34359f2780542175ac95dd6a4582c1e48/index.html)
 
-<a href="/Assets/Img/nytimes.com-clone-animation.gif" target="_blank">
-    <img alt="page animation" src="/Assets/Img/nytimes.com-clone-animation.gif" />
-</a>
+<p> Large Animation
+    <a href="/Assets/Img/animation-large.gif" target="_blank">
+        <img alt="page animation" src="/Assets/Img/animation-large.gif" />
+    </a>
+</p>
+<p> Medium Animation
+    <a href="/Assets/Img/animation-medium.gif" target="_blank">
+        <img alt="page animation" src="/Assets/Img/animation-medium.gif" />
+    </a>
+</p>
+<p> Small Animation
+    <a href="/Assets/Img/animation-small.gif" target="_blank">
+        <img alt="page animation" src="/Assets/Img/animation-small.gif" />
+    </a>
+</p>
 
 ## 🤝 Contributing
 
