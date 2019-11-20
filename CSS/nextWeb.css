@@ -1291,14 +1291,14 @@ h6 {
 
 .ld-discount p {
   transform: rotate(45deg);
-    font-size: 14px;
-    font-weight: 700;
-    left: 8px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: 20px;
-    width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
 }
 
 .ld-item > h4 {
