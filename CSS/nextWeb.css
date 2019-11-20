@@ -379,7 +379,7 @@ h6 {
 
 /* Logo Hover Gif */
 #nav-logo:hover #nav-img {
-  background: url('/Assets/Img/logo-gif.gif') 50%;
+  background: url('../Assets/Img/logo-gif.gif') 50%;
   background-size: cover;
 }
 
@@ -1498,7 +1498,7 @@ b {
   }
 
   #media-nav-img:hover {
-    background: url('/Assets/Img/logo-gif.gif') 50%;
+    background: url('../Assets/Img/logo-gif.gif') 50%;
     background-size: cover;
   }
 
@@ -1752,7 +1752,7 @@ b {
 
   /* Logo Hover Gif */
   #nav-logo:hover #nav-img {
-    background: url('/Assets/Img/logo-gif.gif') 50%;
+    background: url('../Assets/Img/logo-gif.gif') 50%;
     background-size: cover;
   }
 
