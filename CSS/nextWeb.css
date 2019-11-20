@@ -330,12 +330,12 @@ p, h2, h3, h4, h5, h6 {
 .clear-nav > div:nth-child(3) a i {
   color: black;
   text-decoration: none;
-  fot-size: 1.2em;
+  font-size: 1.2em;
   transform: scaleX(-1);
 }
 
 .clear-nav > div:nth-child(3):hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 /* Mobile Nav Disable */
