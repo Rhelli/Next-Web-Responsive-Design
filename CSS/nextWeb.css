@@ -1581,7 +1581,10 @@ b {
 .ts {
   flex: 0 0 50%;
   max-width: 50%;
-}
+}   
+
+
+
 
 .ld-discount {
   background-image: url(../Assets/Img/deals-ribbon.svg);
