@@ -46,13 +46,17 @@ body {
 }
 
 ul {
-  padding-inline-start: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
-p, h2, h3, h4, h5, h6 {
-  margin-block-start: 0;
-  margin-block-end: 0;
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 /* NAVBAR */
@@ -458,8 +462,8 @@ p, h2, h3, h4, h5, h6 {
 
 .cover-header ul li {
   display: inline;
-  margin-left: 5px;;
-  font: 'ARS Maquette Regular', sans-serif;
+  margin-left: 5px;
+  font-family: 'ARS Maquette Regular', sans-serif;
 }
 
 .cover-header ul li a {
@@ -1256,7 +1260,7 @@ p, h2, h3, h4, h5, h6 {
 
 .ld-item {
   flex: 0 0 25%;
-  max-width: calc(25% -10px);
+  max-width: calc(25% - 10px);
   width: 250px;
   margin: 5px;
   position: relative;
@@ -1356,7 +1360,7 @@ footer {
   width: 40px;
   border-radius: 50%;
   background: #333;
-  border: 2px solid #333;
+  border: 2px solid transparent;
   padding: 11px;
   margin: 7px;
   text-align: center;
@@ -1364,6 +1368,7 @@ footer {
 
 .fl-social a:hover {
   background-color: black;
+  border: 2px solid #333;
 }
 
 .fl-menu {
