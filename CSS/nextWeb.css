@@ -223,7 +223,6 @@ h6 {
   align-items: center;
   height: 32px !important;
   width: 100%;
-  background-color: #606060;
   padding: 0;
   margin: 0;
   z-index: 10;
@@ -988,7 +987,7 @@ h6 {
   display: block;
   padding: 10.6px 16px 10.6px 84px;
   color: #000;
-  background: rgba(255, 68, 34, .08);
+  background: rgba(255, 68, 34, 0.08);
   margin: 0;
 }
 
@@ -1003,7 +1002,7 @@ h6 {
 
 .fCard-top div h5 {
   color: #000;
-  opacity: .5;
+  opacity: 0.5;
   font-size: 12px;
   font-family: 'Shentox', sans-serif;
   font-weight: 500;
@@ -1034,14 +1033,14 @@ h6 {
 }
 
 .fCard-invest a:not(:last-child) {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .fCard-invest > a > i {
   display: block;
   font-size: 1.23em;
   position: absolute;
-  top: .2em;
+  top: 0.2em;
   left: 0;
   color: #000;
   opacity: 0.9;
@@ -1049,7 +1048,7 @@ h6 {
 
 .fStory ul {
   margin-top: 0;
-  border-top: 1px solid rgba(255, 68, 34, .25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
   padding: 16px;
   color: #555;
   font-size: 12px;
@@ -1155,7 +1154,7 @@ h6 {
 
 .ts-popular-header h6 {
   font-weight: 500;
-  font-family: 'ARS Maquette Regular';
+  font-family: 'ARS Maquette Regular', sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: hsla(0,0%,100%,.6);
@@ -1223,7 +1222,7 @@ h6 {
 .ts-headline h4:before {
   background-color: #f42;
   border-radius: 50%;
-  content: "";
+  content: '';
   display: block;
   height: 4px;
   left: 0;
