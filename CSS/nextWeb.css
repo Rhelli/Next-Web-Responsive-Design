@@ -533,7 +533,7 @@ h6 {
   bottom: 4px;
   left: 4px;
   right: 4px;
-  transition: background-color .4s ease;
+  transition: background-color 0.4s ease;
   background: rgba(0, 0, 0, 0.25) url('../Assets/Img/image-gradient.png') no-repeat;
   background-size: 100% 100%;
   will-change: background-color;
@@ -755,7 +755,7 @@ h6 {
   margin-bottom: 8px;
   position: relative;
   will-change: opacity;
-  transition: .4s opacity;
+  transition: 0.4s opacity;
 }
 
 .ln-title {
@@ -1217,7 +1217,7 @@ h6 {
   color: #555;
 }
 
-.ts-headline h4:before {
+.ts-headline h4::before {
   background-color: #f42;
   border-radius: 50%;
   content: '';
@@ -1476,6 +1476,10 @@ b {
   color: #f42;
 }
 
+<<<<<<< HEAD
+=======
+/* MEDIA QUERIES */
+>>>>>>> a700344b6c8a302ec809b1ea94a26ccb5127eb1a
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
   /* NAVBAR */
@@ -1867,7 +1871,7 @@ b {
   .mob-nav-bottom a {
     font: 1.1em/170% 'ARS Maquette Regular', Helvetica, Arial, sans-serif;
     text-decoration: none;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.6);
   }
 
   .links-left {
