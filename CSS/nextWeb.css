@@ -154,7 +154,7 @@ html {
 body {
   max-width: 100vw;
   height: auto;
-  font: 
+  font:
     normal normal 16px/100% 'ARS Maquette Regular',
     Helvetica,
     Arial, sans-serif;
@@ -671,7 +671,6 @@ h6 {
 .body-wrapper {
   margin: 0 auto;
   max-width: 1192px;
-  /*background-color: wheat;*/
 }
 
 /* LATEST-NEWS-SECTION */
@@ -1846,7 +1845,7 @@ b {
 
   .clear-nav > div:last-child button {
     text-decoration: none;
-    color: #ff4422;
+    color: #f42;
     font-size: 1.6em;
     border: none;
     outline: none;
