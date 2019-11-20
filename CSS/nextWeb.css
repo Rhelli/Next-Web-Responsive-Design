@@ -912,6 +912,10 @@ p, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
+.fCard-invest > a:hover {
+  color: #000;
+}
+
 .fCard-invest a:not(:last-child) {
   margin-bottom: .5em;
 }
