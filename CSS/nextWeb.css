@@ -330,7 +330,7 @@ p, h2, h3, h4, h5, h6 {
 .clear-nav > div:nth-child(3) a i {
   color: black;
   text-decoration: none;
-  font-size: 1.2em;
+  fot-size: 1.2em;
   transform: scaleX(-1);
 }
 
