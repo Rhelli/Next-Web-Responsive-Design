@@ -1057,7 +1057,7 @@ h6 {
 
 .ts-latest {
   display: flex;
-  background-color: rgba(255,68,34,.06);
+  background-color: rgba(255, 68, 34, 0.06);
 }
 
 .ts-latest-header {
@@ -1458,9 +1458,6 @@ b {
   #mediaNavAnim {
     width: 85px;
     height: 15px;
-  }
-
-  #mediaNavAnim {
     -webkit-animation: mediaNavAnim 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: mediaNavAnim 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   }
