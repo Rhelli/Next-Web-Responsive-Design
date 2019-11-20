@@ -433,21 +433,17 @@ h6 {
 
 /* Clear Nav Search Icon */
 .clear-nav > div:nth-child(3) {
-  border-left: 1px solid #d0d0d0;
-  float: left
-}
-
-.clear-nav > div:nth-child(3) {
   display: block;
   position: relative;
   height: 100%;
   width: 48px;
-  padding: 0;
   margin: 0;
   opacity: 0.25;
   will-change: opacity;
   margin-left: auto;
-  padding: 10px 0 0 15px
+  padding: 10px 0 0 15px;
+  border-left: 1px solid #d0d0d0;
+  float: left
 }
 
 .clear-nav > div:nth-child(3) a i {
@@ -689,6 +685,7 @@ h6 {
   display: block;
   position: relative;
   width: 100%;
+  height: auto;
 }
 
 .latest-news-section header {
@@ -725,11 +722,6 @@ h6 {
 
 .latest-news-section header h2 a:hover span {
   background-image: url('../Assets/Img/subtitle-arrow-black.svg');
-}
-
-.latest-news-section div {
-  width: 100%;
-  height: auto;
 }
 
 .latest-news {
@@ -1140,7 +1132,7 @@ h6 {
 
 .ts-popular-header h5 {
   font-size: 13px;
-  font-family: "Shentox", sans-serif;
+  font-family: 'Shentox', Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -1186,7 +1178,7 @@ h6 {
 
 .ts-latest-header h5 {
   font-size: 13px;
-  font-family: Shentox,sans-serif;
+  font-family: 'Shentox', Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -1322,9 +1314,6 @@ h6 {
 }
 
 /* LATEST DEALS SECTION */
-.latest-deals-section {
-  margin: 0 auto;
-}
 
 .ld-header  {
   display: flex;
@@ -1481,7 +1470,7 @@ footer {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: normal;
-  font-family: Shentox;
+  font-family: 'Shentox', Helvetica, Arial, sans-serif;
 }
 
 .fl-menu a:link,
@@ -1930,7 +1919,7 @@ b {
   }
 
   .mob-nav-bottom h5 {
-    font: 1.2em/100% 'Shentox';
+    font: 1.2em/100% 'Shentox', Helvetica, Arial, sans-serif;
     margin: 0;
     margin-top: 18px;
   }
