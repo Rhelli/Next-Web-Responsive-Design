@@ -1949,7 +1949,7 @@ b {
   .coverArt1 div:nth-child(4) {
     display: none;
   }
-  
+
   /* LATEST NEWS SECTION */
   .latest-news-section {
     display: block;
@@ -1958,8 +1958,7 @@ b {
     box-sizing: content-box;
     padding: 24px 10px 0 10px;
   }
-
-
+  
   .ln-item {
     flex: 1 0 100%;
     height: auto;
