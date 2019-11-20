@@ -288,13 +288,8 @@ h6 {
 .black-drop-content::before {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-<<<<<<< HEAD
-  border-bottom: 6px solid rgba(0, 0, 0, 0.9);
-  content: "";
-=======
   border-bottom: 6px solid rgba(0,0,0,.9);
   content: '';
->>>>>>> c1d101998b6ef6af05ac30909c7f8f868b5bfd5a
   height: 0;
   left: 32px;
   margin-left: -6px;
