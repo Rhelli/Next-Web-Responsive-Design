@@ -43,10 +43,10 @@
 
 @keyframes blackNavDrop {
   0% {
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  opacity: 0;
-}
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
 100% {
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -57,87 +57,87 @@
 /* Nav Logo DropDown Entrance */
 @keyframes navLogo {
   0% {
-  transform: translateY(-1000px);
-  opacity: 0.9;
-}
+    transform: translateY(-1000px);
+    opacity: 0.9;
+  }
 100% {
-  transform: translateY(0);
-  opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* Large Nav TNW Logo Entrance */
 @-webkit-keyframes mediaNavAnim {
   0% {
-  -webkit-transform: translateY(15px);
-  transform: translateY(15px);
-  opacity: 1;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity: 1;
 } 100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes mediaNavAnim {
   0% {
-  -webkit-transform: translateY(15px);
-  transform: translateY(15px);
-  opacity:1;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity:1;
 } 100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* Mob Nav Entrance */
 @-webkit-keyframes mobNavEntrance {
   0% {
-  -webkit-transform:translateX(1000px);
-  transform:translateX(1000px);
-  opacity: 0;
+    -webkit-transform:translateX(1000px);
+    transform:translateX(1000px);
+    opacity: 0;
 } 100% {
-  -webkit-transform:translateX(0);
-  transform:translateX(0);
-  opacity: 1;
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes mobNavEntrance {
   0% {
-  -webkit-transform: translateX(1000px);
-  transform: translateX(1000px);
-  opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
 } 100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 /* Mob Nav Exit */
 @-webkit-keyframes mobNavExit {
   0% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
 } 100% {
-  -webkit-transform: translateX(1000px);
-  transform: translateX(1000px);
-  opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
   }
 }
 
 @keyframes mobNavExit {
   0% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
 } 100% {
-  -webkit-transform: translateX(1000px);
-  transform: translateX(1000px);
-  opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
   }
 }
 
