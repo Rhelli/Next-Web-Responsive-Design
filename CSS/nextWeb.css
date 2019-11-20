@@ -10,6 +10,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 @keyframes tnw-small {
@@ -23,6 +24,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 /* Black Nav Submenu Entrance */
@@ -37,6 +39,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 @keyframes blackNavDrop {
@@ -50,6 +53,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 /* Nav Logo DropDown Entrance */
@@ -62,6 +66,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 /* Large Nav TNW Logo Entrance */
@@ -76,6 +81,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 @keyframes mediaNavAnim {
@@ -89,6 +95,7 @@
     transform: translateY(0);
     opacity: 1;
   }
+
 }
 
 /* Mob Nav Entrance */
@@ -103,6 +110,7 @@
     transform: translateX(0);
     opacity: 1;
   }
+
 }
 
 @keyframes mobNavEntrance {
@@ -116,6 +124,7 @@
     transform: translateX(0);
     opacity: 1;
   }
+
 }
 
 /* Mob Nav Exit */
@@ -130,6 +139,7 @@
     transform: translateX(1000px);
     opacity: 0;
   }
+
 }
 
 @keyframes mobNavExit {
@@ -143,6 +153,7 @@
     transform: translateX(1000px);
     opacity: 0;
   }
+  
 }
 
 *,
