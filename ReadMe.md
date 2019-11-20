@@ -19,7 +19,7 @@ This page has semantic and accesible HTML5. CSS3 methods including flexbox, cust
 
 ## 🚀 Our project
 
-Our project can be found at https://github.com/Rhelli/Next-Web-Responsive-Design/tree/development
+Our project can be found at https://github.com/Rhelli/Next-Web-Responsive-Design
 
 ### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/Next-Web-Responsive-Design/development/index.html)
 
