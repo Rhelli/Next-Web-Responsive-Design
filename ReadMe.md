@@ -21,15 +21,15 @@ This page has semantic and accesible HTML5. CSS3 methods including flexbox, cust
 
 Our project can be found at https://github.com/Rhelli/Next-Web-Responsive-Design/tree/development
 
-### ✨ [Link to Live Site](https://rawcdn.githack.com/Rhelli/Next-Web-Responsive-Design/6a8d13c34359f2780542175ac95dd6a4582c1e48/index.html)
+### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/Next-Web-Responsive-Design/development/index.html)
 
-<p>Large Animation</p>
+#### Large Animation
 <a href="/Assets/Img/animation-large.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-large.gif"/></a>
-***
-<p> Medium Animation</p>
+
+#### Medium Animation
 <a href="/Assets/Img/animation-medium.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-medium.gif"/> </a>
-***
-<p> Small Animation</p> 
+
+#### Small Animation
 <a href="/Assets/Img/animation-small.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-small.gif"/> </a>
 
 
