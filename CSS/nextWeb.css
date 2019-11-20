@@ -726,7 +726,7 @@ p, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   width: auto;
   height: auto;
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 .funding-section header {
@@ -1917,7 +1917,7 @@ footer {
 
 .ln-item h4,
 .ln-item ul {
-  max-width: 67%;
+  max-width: 75%;
   padding-left: 88px;
   position: relative;
 }
