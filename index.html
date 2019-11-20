@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TNW</title>
+    <meta name="description" content="Original and proudly opinionated perspectives on remarkable stories for Generation T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="icon" href="Assets/Img/favicon.ico">
+    <link rel="stylesheet" href="CSS/nextWeb.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div id="media-nav-img">
+        <a href="#" title="The Next Web">
+          <img id="mediaNavAnim" src="Assets/Img/tnw.svg" alt="The Next Web">
+        </a>
+      </div>
+      <!-- Top (Black) Nav Content -->
+      <div>
+        <div class="black-nav">
+        <div><a href="https://index.co/" title="News">News</a></div>
+        <div class="black-drop">
+          <a href="#">Events ▾</a>
+            <div class="black-drop-content">
+              <a href="https://thenextweb.com/bowlr/" title="Bowlr 2019">Bowlr 2019</a>
+              <a href="https://thenextweb.com/conference/" title="TNW2020">TNW2020</a>
+            </div>
+        </div>
+        <div class="black-drop">
+          <a href="https://thenextweb.com/conference/" title="Events">Business ▾</a>
+            <div class="black-drop-content">
+              <a href="https://thenextweb.com/x/" title="TNW X">TNW X</a>
+              <a href="https://index.co/" title="Index">Index</a>
+            </div>
+        </div>
+        <div><a href="https://answers.thenextweb.com/" title="Answers">AMAs</a></div>
+        <div><a href="https://tq.co/" title="Spaces">Spaces</a></div>
+        <div><a href="https://thenextweb.com/terms-and-conditions/">Terms & Conditions</a></div>
+        <!-- Right Side Nav Sections -->
+        <div>
+          <div><a href="https://thenextweb.com/about" title="About">About</a></div>
+          <div><a href="https://thenextweb.com/team" title="Team">Team</a></div>
+          <div><a href="https://thenextweb.com/advertise" title="Advertise">Advertise</a></div>
+          <div><a href="https://thenextweb.homerun.co/" title="Jobs">Jobs</a></div>
+          <div><a href="https://thenextweb.com/contact" title="Contact">Contact</a></div>
+        </div>
+        </div>
+        <!-- Main (White) Nav Content -->
+        <div class="clear-nav">
+          <!-- Nav Logo -->
+          <div id="nav-logo">
+            <a id="nav-img" href="#">
+              <img src="Assets/Img/tnw.svg" alt="The Next Web">
+            </a>
+            <!-- Logo Drop Down Menu -->
+            <div class="logo-drop">
+              <div class="logo-content">
+                <a href="https://thenextweb.com/">News</a>
+                <a href="https://thenextweb.com/conference/">Events</a>
+                <a href="https://index.co/">Index</a>
+                <a href="https://tq.co/">TQ</a>
+                <a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&utm_medium=referral&utm_campaign=navbar">Deals</a>
+                <a href="https://answers.thenextweb.com/">Answers</a>
+                <a href="https://thenextweb.com/x/">TNW X</a>
+              </div>
+            </div>
+          </div>
+          <!-- Nav sections -->
+          <div id="clearNav">
+            <a href="https://thenextweb.com/latest" title="Latest">LATEST</a>
+            <a href="https://thenextweb.com/hardfork" title="Hard Fork">HARD FORK</a>
+            <a href="https://thenextweb.com/plugged" title="Plugged">PLUGGED</a>
+            <a href="https://thenextweb.com/adobe-fundamentals" title="Fundamentals">FUNDAMENTALS</a>
+            <a href="https://thenextweb.com/work2030" title="Work 2030">WORK 2030</a>
+          </div>
+          <!-- Search Icon -->
+          <div>
+            <a id="open-search" href="#"><i class="fas fa-search"></i></a>
+          </div>
+          <div>
+            <button id="hamburger-mob" onclick="showMobNav()"><i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Nav -->
+      <div id="mobNav">
+        <div>
+          <button id="close-mob-nav" onclick="hideMobNav()">
+              <i class="fas fa-times fa-2x"></i>
+          </button>
+        </div>
+        <div class="mob-nav-top">
+          <ul>
+            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com/thenextweb" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://twitter.com/thenextweb" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://pinterest.com/thenextweb" title="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed"><i class="fas fa-rss"></i></a></li>
+          </ul>
+        </div>
+        <div class="mob-nav-bottom">
+          <div class="links-left">
+            <h5>Sections</h5>
+            <ul>
+              <li><a href="https://thenextweb.com/latest">Latest</a></li>
+              <li><a href="https://thenextweb.com/section/insights">Insights</a></li>
+              <li><a href="https://thenextweb.com/bowlr/">Bowlr 2019</a></li>
+              <li><a href="https://thenextweb.com/plugged/">Plugged</a></li>
+              <li><a href="https://thenextweb.com/adobe-fundamentals/">Fundamentals</a></li>
+              <li><a href="https://thenextweb.com/work2030/">Work 2030</a></li>
+            </ul>
+          </div>
+          <div class="links-right">
+            <h5>About TNW</h5>
+            <ul>
+              <li><a href="https://thenextweb.com/about">About</a></li>
+              <li><a href="https://thenextweb.com/team">Team</a></li>
+              <li><a href="https://tnwads.typeform.com/to/ofLLXt">Advertise</a></li>
+              <li><a href="https://thenextweb.com/jobs">Jobs</a></li>
+              <li><a href="https://thenextweb.com/about#contact">Contact</a></li>
+              <li><a href="https://thenextweb.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+            </ul>
+            <h5>TNW Sites</h5>
+            <ul class="nav-mob-menu">
+              <li><a href="https://thenextweb.com/news">News</a></li>
+              <li><a href="https://thenextweb.com//conference/">TNW 2020</a></li>
+              <li><a href="https://thenextweb.com//bowlr/">Bowlr 2019</a></li>
+              <li><a href="https://index.co/">Index</a></li>
+              <li><a href="https://tq.co/">TQ</a></li>
+              <li><a href="http://deals.thenextweb.com/">Deals</a></li>
+              <li><a href="https://answers.thenextweb.com/">Answers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN BODY -->
+    <main>
+
+      <!-- Cover Stories/Articles Section -->
+      <section class="coverArt-container" id="cover-articles">
+        <div>
+          <article class="coverArt1 cover-story">
+            <div class="cover-image"></div>
+            <a class="cover-trigger" href="https://thenextweb.com/syndication/2019/11/18/decoding-how-some-animals-pause-pregnancies-could-unlock-new-cancer-treatments/" title="Decoding how some animals pause pregnancies could unlock new cancer treatments"></a>
+            <div></div>
+            <div></div>
+            <div></div>
+            <header class="cover-header">
+              <h5><a href="https://thenextweb.com/section/world/" title="WORLD">WORLD</a></h5>
+              <h2><a href="https://thenextweb.com/syndication/2019/11/18/decoding-how-some-animals-pause-pregnancies-could-unlock-new-cancer-treatments/">Decoding how some animals pause pregnancies could unlock new cancer treatments</a></h2>
+              <ul>
+                <li>by <a href="https://thenextweb.com/author/theconversation/" title="The Conversation">The Conversation</a></li>
+                <li><i class="far fa-clock"></i>&nbsp;3 hours ago</li>
+                <li><i class="fas fa-share-alt"></i>&nbsp;2</li>
+              </ul>
+            </header>
+          </article>
+        </div>
+        <div>
+          <article class="coverArt2 cover-story">
+            <div class="cover-image"></div>
+            <a class="cover-trigger" href="https://thenextweb.com/tech/2019/11/18/iran-shut-down-citizens-internet-access-following-protests-over-fuel-pricing/" title="Iran shut down citizens' internet access following protests over fule pricing"></a>
+            <header class="cover-header">
+              <h5><a href="https://thenextweb.com/section/tech" title="Tech">TECH</a></h5>
+              <h2><a href="https://thenextweb.com/tech/2019/11/18/iran-shut-down-citizens-internet-access-following-protests-over-fuel-pricing/" title="Iran shut down citizens' internet access following protests over fule pricing">Iran shut down citizens' internet access following protests over fule pricing</a></h2>
+              <ul>
+                <li>by <a href="https://thenextweb.com/author/cara-curtis/" title="Cara Curtis">Cara Curtis</a></li>
+                <li><i class="far fa-clock"></i>&nbsp;4 hours ago</li>
+                <li><i class="fas fa-share-alt"></i>&nbsp;22</li>
+              </ul>
+            </header>
+          </article>
+          <article class="coverArt3 cover-story">
+            <div class="cover-image"></div>
+            <a class="cover-trigger" href="https://thenextweb.com/podium/2019/11/18/the-product-manager-secrets-to-surviving-the-3-pivotal-startup-phases/" title="The product manager secrets to surviving the 3 picotal startup phases"></a>
+            <header class="cover-header">
+              <h5><a href="https://thenextweb.com/section/podium" title="Podium">PODIUM</a></h5>
+              <h2><a href="https://thenextweb.com/podium/2019/11/18/the-product-manager-secrets-to-surviving-the-3-pivotal-startup-phases/" title="The product manager secrets to surviving the 3 picotal startup phases">The product manager secrets to surviving the 3 picotal startup phases</a></h2>
+              <ul>
+                <li>by <a href="https://thenextweb.com/author/vivek-lakshman/" title="Vivek Lakshman">Vivek Laksham</a></li>
+                <li><i class="far fa-clock"></i>&nbsp;4 hours ago</li>
+                <li><i class="fas fa-share-alt"></i>&nbsp;18</li>
+              </ul>
+            </header>
+          </article>
+        </div>
+      </section>
+
+        <!-- MAIN BODY CONTAINER -->
+        <div class="body-wrapper">
+
+          <!-- LATEST NEWS SECTION -->
+          <section class="latest-news-section">
+            <header>
+              <h2>
+                <a href="https://thenextweb.com/latest" title="Latest News">Latest News<span></span></a>
+              </h2>
+            </header>
+            <div>
+              <ul class="latest-news">
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/apple/2019/11/18/apple-is-holding-a-surprise-event-in-december-but-dont-expect-much/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/apple/2019/11/18/apple-is-holding-a-surprise-event-in-december-but-dont-expect-much/">Apple is holding a suprise event in December, but don't expect much</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/napierlopez/">Napier Lopez</a></li>
+                    <li>&middot;</li>
+                    <li>2 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/artificial-intelligence/2019/11/18/ibms-code-and-response-documentary-proves-developers-can-be-superheroes-too/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/artificial-intelligence/2019/11/18/ibms-code-and-response-documentary-proves-developers-can-be-superheroes-too/">IBM's 'Code and Response' documentary proves developers can be superheroes too</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/tristangreen/">Tristan Greene</a></li>
+                    <li>&middot;</li>
+                    <li>3 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/hardfork/2019/11/18/fbi-neil-bush-onecoin-cryptocurrency-ruja-ignatova-court/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/hardfork/2019/11/18/fbi-neil-bush-onecoin-cryptocurrency-ruja-ignatova-court/">FBI spoke with George Bush's brother over $300K meeting with OnceCoin's missing 'Cryptoqueen'</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/davidcanellis/">David Canellis</a></li>
+                    <li>&middot;</li>
+                    <li>4 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/gaming/2019/11/18/ubisoft-assassins-creed-audio-drama-audible/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/gaming/2019/11/18/ubisoft-assassins-creed-audio-drama-audible/">Ubisoft turns Assasin's Creed into an audio drama with Audible</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a></li>
+                    <li>&middot;</li>
+                    <li>5 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/hardfork/2019/11/18/senior-uk-judges-say-cryptoassets-including-bitcoin-are-property/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/hardfork/2019/11/18/senior-uk-judges-say-cryptoassets-including-bitcoin-are-property/">Senior Judges say cryptoassets, including Bitcoin are property</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/yessibelloperez/">Yessi Bello Perez</a></li>
+                    <li>&middot;</li>
+                    <li>6 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/gaming/2019/11/18/hands-on-google-stadia-works-as-advertised-but-lacks-a-killer-app/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/gaming/2019/11/18/hands-on-google-stadia-works-as-advertised-but-lacks-a-killer-app/">Hands-on: Google Stadio works as advertised, but lacks a killer app</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/ninodevries/">Nino de Vries</a></li>
+                    <li>&middot;</li>
+                    <li>6 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/plugged/2019/11/18/pokemon-sword-shield-fantastic-game-nintendo-switch/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/plugged/2019/11/18/pokemon-sword-shield-fantastic-game-nintendo-switch/">Pokémon Sword & Shield are fantastic - but here's how they could be better</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/callum-booth/">Callum Booth</a></li>
+                    <li>&middot;</li>
+                    <li>6 hours ago</li>
+                  </ul>
+                </li>
+                <li class="ln-item">
+                  <div>
+                    <a class="ln-image" href="https://thenextweb.com/hardfork/2019/11/18/researchers-debunk-theory-that-single-whale-caused-2017s-bitcoin-bull-run/"></a>
+                  </div>
+                  <h4 class="ln-title"><a href="https://thenextweb.com/hardfork/2019/11/18/researchers-debunk-theory-that-single-whale-caused-2017s-bitcoin-bull-run/">Researchers debunk theory that single whale caused 2017's Bitcoin bull run</a></h4>
+                  <ul class="ln-byline">
+                    <li><a href="https://thenextweb.com/author/yessibelloperez/">Yessi Bello Perez</a></li>
+                    <li>&middot;</li>
+                    <li>7 hours ago</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- LATEST FUNDING SECTION -->
+          <section>
+            <div class="funding-section">
+              <header>
+                <div>  
+                  <h2>
+                    <a href="https://index.co/investments?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">Latest funding rounds on Index.co<span></span></a>
+                  </h2>
+                </div>
+                <div>
+                  <a href="https://index.co/investments?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">See more</a>
+                  <a href="https://index.co/investments?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">Get updates by email</a>
+                  <a href="https://index.co/faq?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com#addFunding">Add info</a>
+                </div>
+              </header>
+              
+              <!-- Cards -->
+              <div class="fCard-container">
+                <div class="fCard1">
+                  <div class="fStory">
+                    <a class="fCard-top" href="https://index.co/company/opay/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
+                      <img src="Assets/Img/opay-fcard01.jpg" alt="">
+                      <h4 class="fCard-org">OPay</h4>
+                      <div>
+                        <h4>$120M</h4>
+                        <h5>SERIES B</h5>
+                      </div>
+                    </a>
+                    <div class="fCard-invest">
+                      <a href="https://index.co/company/opay/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"><i class="fas fa-tag"></i>Payments, +2</a>
+                      <a href=""><i class="fas fa-briefcase"></i>GSR Ventures, +8</a>
+                    </div>
+                    <ul class="fCard-byline">
+                      <li>
+                        <a href="https://www.dealstreetasia.com/stories/opay-meituan-dianping-gaorong-capital-163164/">Chinese investors back $120m funding in Africa-focused fintech startup OPay <span>on DealStreetAsia</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="fCard2">
+                  <div class="fStory">
+                    <a class="fCard-top" href="https://index.co/company/western-shelter/funding/undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
+                      <img src="Assets/Img/westernshelter-fcard02.jpg" alt="">
+                      <h4 class="fCard-org">Western Shelter</h4>
+                      <div>
+                        <h4>Undisclosed amount</h4>
+                        <h5>UNDISCLOSED</h5>
+                      </div>
+                    </a>
+                    <div class="fCard-invest">
+                      <a href="https://index.co/company/western-shelter/funding/undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"><i class="fas fa-briefcase"></i>Guardian</a>
+                    </div>
+                    <ul class="fCard-byline">
+                      <li>
+                        <a href="https://www.privateequitywire.co.uk/2019/11/18/280510/guardian-invests-western-shelter">Guardian invests in Western Shelter <span>on PrivateEquityWire</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="fCard3">
+                  <div class="fStory">
+                    <a class="fCard-top" href="https://index.co/company/BluevineCapital/funding/series-f?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
+                      <img src="Assets/Img/bluevine-fcard03.jpg" alt="">
+                      <h4 class="fCard-org">BlueVine</h4>
+                      <div>
+                        <h4>$102.5M</h4>
+                        <h5>SERIES F</h5>
+                      </div>
+                    </a>
+                    <div class="fCard-invest">
+                      <a href="https://index.co/company/BluevineCapital/funding/series-f?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"><i class="fas fa-tag"></i>Payments, +3</a>
+                      <a href="https://index.co/company/BluevineCapital/funding/series-f?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"><i class="fas fa-briefcase"></i>Menlo Ventures, +12</a>
+                    </div>
+                    <ul class="fCard-byline">
+                      <li>
+                        <a href="https://www.pehub.com/2019/11/bluevine-raises-102-5-mln/">BlueVine raises $102.5 mln <span>on PE HUB</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="fCard4">
+                  <div class="fStory">
+                    <a class="fCard-top" href="https://index.co/company/traveltriangle/funding/series-d?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
+                      <img src="Assets/Img/traveltriangle-fcard04.jpg" alt="">
+                      <h4 class="fCard-org">TravelTriangle</h4>
+                      <div>
+                        <h4>$13M</h4>
+                        <h5>SERIES D</h5>
+                      </div>
+                    </a>
+                    <div class="fCard-invest">
+                      <a href="https://index.co/company/traveltriangle/funding/series-d?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"><i class="fas fa-tag"></i>E-Commerce, +2</a>
+                      <a href="https://index.co/company/traveltriangle/funding/series-d?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"><i class="fas fa-briefcase"></i>The Fundamentum Partnership</a>
+                    </div>
+                    <ul class="fCard-byline">
+                      <li>
+                        <a href="https://www.vccircle.com/curated-travel-platform-traveltriangle-mops-up-13-mn-in-series-d-funding/">Curated travel platform TravelTriangle mops up $13 mn in Series F funding <span>on VCCircle</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TOPICS SECTION -->
+          <div class="topics-section-container">
+            <section  class="ts">
+              <h2 class="ts-title">Apps</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular01.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>TikTok surpasses 1.5 billion downloads — with almost 500M in India</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>Google's new feature will correct your pronunciation</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest01.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline"><h4>Facebook is quietly testing an Instagram feed-like feature </h4></li>
+                <li class="ts-headline"><h4>Google is rolling out RCS, text-messaging on steroids, in the US</h4></li>
+                <li class="ts-headline"><h4>Instagram just took its divisive 'hidden likes' experiment global</h4></li>
+                <li class="ts-headline"><h4>Facebook fixed that bug that opened your camera without permission</h4></li>
+                <li class="ts-headline"><h4>Netflix partners with Nickelodeon as Disney+ ensnares millions</h4></li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Gear</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular02.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>How to check your AirPods' battery percentage on an iPhone</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>CHEAP: OMFG!!! The Pandemic board game is 40% off!!!</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest02.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>CHEAP: It's your last chance to suck $200 off Roomba's 'i-series' robo-vacuum</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Huawei's Mate X is finally on sale in china, but it's already sold out</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Huawei will reveal its iPad Pro competitor on November 25</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>How to check your AirPods' battery percentage on an iPhone</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>CHEAP: Dance to the rhythm of your own Beats with $170 off the Solo3</h4>
+                </li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Tech</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular03.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>GitHub launches Security Lab to spot vulnerabilities in open-source code</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>Iran shut down citizens' internet access following protests over fuel pricing</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest03.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>TNW's quest to discover Europe's best scale-up is back – sign up now</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>146 security flaws uncovered in pre-installed Android apps</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Why philosophers believe we've reached peak human intelligence</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Facebook fixed that bug that opened your camera without permission</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Netflix partners with Nickelodeon as Disney+ ensnares millions</h4>
+                </li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Creative</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular04.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>Microsoft's new font for devs is very aesthetically pleasing (and free)</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>Microsoft's new font for devs is very aesthetically pleasing (and free)</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest04.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>How to build a production and recording studio that fits in a backpack</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Watch: Disney’s new anti-vibration tech maps CGI movements onto actual robots</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Chinese vertical dramas made for phone viewing show the future of mobile video</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Sorry, but you can’t copyright a meme</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>A peek at legendary architect John Storyk's design process</h4>
+                </li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Podium</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular05.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>Why your ‘data-driven’ strategy isn’t working</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>The product manager secrets to surviving the 3 pivotal startup phases</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest05.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>The AirPods Pro have me dreaming of reality-suppressing tech</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Bill V Bowie: How (not) to sell a tech idea</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>4 simple things social media marketers can do to improve social responsibility</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Europe needs to embrace 5G — before it’s too late</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>3 ways e-commerce sellers can improve ROI in 2020 with data analytics</h4>
+                </li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Insights</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular06.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>Nestlé and Carrefour just put baby milk formula on the blockchain</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>Researchers debunk theory that single whale caused 2017's Bitcoin bull run</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest06.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>IRS eyes Bitcoin ATMs amid cryptocurrency tax concerns</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Moonday Mornings: Russia’s security agency reportedly linked to $450M cryptocurrency loss</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Study: There may be no such thing as objective reality</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Nestlé and Carrefour just put baby milk formula on the blockchain</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Railway workers caught mining Bitcoin with state electricity in Ukraine</h4>
+                </li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Launch</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular07.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>PSA: Amazon Fresh grocery deliveries are now free for US Prime members</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>Alexis Ohanian and Serj Tankian team up to help build a social network for Armenia</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest07.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>Google Assistant gets its own phone number in India</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Pam and Angela from The Office are re-watching the show for their new podcast</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Bethesda wants you to test its game streaming tech with DOOM on iOS this year</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Mozilla rolls out new automated crypto-jacking filtering in Firefox</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Google announces Stadia, its cross-platform game streaming service</h4>
+                </li>
+              </ul>
+            </section>
+            <section class="ts">
+              <h2 class="ts-title">Distract</h2>
+              <ul>
+                <li>
+                  <article class="ts-popular">
+                    <img class="ts-popular-image" src="Assets/Img/ts-popular08.png" alt="">
+                    <img class="ts-popular-gradient" src="Assets/Img/image-gradient.png" alt="">
+                    <header class="ts-popular-header">
+                      <h5>MOST POPULAR</h5>
+                      <h3>YouTube's next big change could penalize anyone who creates for kids</h3>
+                      <h6>Ivan Mehta - 5 hours ago</h6>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="ts-latest">
+                    <header class="ts-latest-header">
+                      <h5>LATEST</h5>
+                      <h4>Xbox Game Pass adds 50 games including Yakuza and (almost) every Final Fantasy</h4>
+                    </header>
+                    <img class="ts-latest-image" src="Assets/Img/ts-latest08.png" alt="">
+                  </article>
+                </li>
+                <li class="ts-headline">
+                  <h4>YouTube's next big change could penalize anyone who creates for kids</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Why this 2019 Nobel physics winner says we should stop calling it a 'Big Bang'</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>The Outer World will satiate your need for character-driven RPG experience</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Anger over Pokémon Sword & Shield spurs a White House petition</h4>
+                </li>
+                <li class="ts-headline">
+                  <h4>Netflix partners with Nickelodeon as Disney+ ensnares millions</h4>
+                </li>
+              </ul>
+            </section>
+
+            <!-- LATEST DEALS SECTION -->
+            <section class="latest-deals-section">
+              <header class="ld-header">
+                <h2>Latest deals</h2>
+                <span>See all Deals</span>
+              </header>
+              <ul class="latest-deals">
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic01.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>92% OFF</p>
+                  </div>
+                  <h4>12min Micro Book Library: Lifetime Premium Subscription</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$346.50</span>
+                    <span class="ld-price-new">$29</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic02.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>97% OFF</p>
+                  </div>
+                  <h4>ThunderDrive Cloud Storage: Lifetime Subscription</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$1200</span>
+                    <span class="ld-price-new">$39</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic03.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>92% OFF</p>
+                  </div>
+                  <h4>KeepSolid VPN Unlimited: Lifetime Subscription</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$499.99</span>
+                    <span class="ld-price-new">$39</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic04.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>98% OFF</p>
+                  </div>
+                  <h4>Degoo Premium: Lifetime 10TB Backup Plan</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$3600</span>
+                    <span class="ld-price-new">$89.99</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic05.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>92% OFF</p>
+                  </div>
+                  <h4>Polar Cloud Backup: Lifetime Subscription (5TB)</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$990</span>
+                    <span class="ld-price-new">$79.99</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic06.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>97% OFF</p>
+                  </div>
+                  <h4>The School of Graphic Design Mastery Bundle</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$1400</span>
+                    <span class="ld-price-new">$39</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic07.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>64% OFF</p>
+                  </div>
+                  <h4>Apple iPad 3 9.7" 16GB - Black (Certified Refurbished)</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$387</span>
+                    <span class="ld-price-new">$139</span>
+                  </div>
+                </li>
+                <li class="ld-item">
+                  <img class="ld-picture" src="Assets/Img/ldPic08.jpg" alt="">
+                  <div class="ld-discount">
+                    <p>64% OFF</p>
+                  </div>
+                  <h4>Apple iPad Mini 1 7.9" 32GB - Black (Certified Refurbished)</h4>
+                  <div class="ld-price">
+                    <span class="ld-price-old">$411</span>
+                    <span class="ld-price-new">$150</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+          </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-links">
+        <ul class="fl-social">
+          <li><a href=""><i class="fab fa-facebook-square footer-logo"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter footer-logo"></i></a></li>
+          <li><a href=""><i class="fab fa-youtube footer-logo"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram footer-logo"></i></a></li>
+          <li><a href=""><i class="fab fa-pinterest-p footer-logo"></i></a></li>
+          <li><a href=""><i class="fas fa-rss footer-logo"></i></a></li>
+          <li><a href=""><i class="fas fa-envelope footer-logo"></i></a></li>
+        </ul>
+        <ul class="fl-menu">
+          <li><a href="">Events</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Advertise</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <span><img class="logo-footer" src="Assets/Img/tnw.svg" alt="the next web logo">&nbsp;© 2006–2019 The Next Web
+          B.V.&nbsp;</span>
+        <span>Made with <b>♥</b> in Amsterdam.</span>
+        <span>&nbsp; Powered by &nbsp;<img class="logo-footer" src="Assets/Img/stackpath.svg" alt="stackpath"></span>
+      </div>
+    </footer>
+
+  <script src="JS/navAction.js"></script>
+  <script src="JS/mobNav.js"></script>
+  </body>
+  
+</html>
