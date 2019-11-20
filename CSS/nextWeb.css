@@ -31,7 +31,7 @@
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
     opacity: 0;
-  } 
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -70,7 +70,7 @@
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
     opacity: 1;
-} 
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -83,7 +83,7 @@
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
     opacity:1;
-} 
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -97,7 +97,7 @@
     -webkit-transform:translateX(1000px);
     transform:translateX(1000px);
     opacity: 0;
-} 
+  }
   100% {
     -webkit-transform:translateX(0);
     transform:translateX(0);
@@ -110,7 +110,7 @@
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
     opacity: 0;
-} 
+  }
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -124,7 +124,7 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
-} 
+  }
   100% {
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
@@ -137,7 +137,7 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
-} 
+  }
   100% {
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
@@ -1246,7 +1246,7 @@ h6 {
   margin: 0 auto;
 }
 
-.ld-header  {
+.ld-header {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
@@ -1317,8 +1317,7 @@ h6 {
 }
 
 /* LATEST DEALS SECTION */
-
-.ld-header  {
+.ld-header {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
@@ -1416,7 +1415,7 @@ footer {
   width: 100%;
   color: #aaa;
   font-size: 13px;
-  font-weight: 300;  
+  font-weight: 300;
 }
 
 .fl-social {
@@ -2166,5 +2165,4 @@ b {
   b {
     color: #f42;
   }
-
 }
