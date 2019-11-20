@@ -1,6 +1,6 @@
 /* TNW Nav Logo Img Entrance */
-@-webkit-keyframes tnw-small-ent {
-  0% {
+@-webkit-keyframes tnw-small {
+  0%{
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
     opacity: 1;
@@ -12,7 +12,7 @@
   }
 }
 
-@keyframes tnw-small-ent {
+@keyframes tnw-small {
   0% {
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
@@ -1323,6 +1323,14 @@ h6 {
   color: #f42;
 }
 
+.ld-header h2 {
+  line-height: 32px;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Avalon, sans-serif;
+  letter-spacing: -.015em;
+}
+
 .ld-header h2::after {
   background-image: url(../Assets/Img/download.svg);
   background-size: 16px 16px;
@@ -1338,6 +1346,22 @@ h6 {
 .ld-header h2:hover,
 .ld-header span:hover {
   color: #000;
+}
+
+.ld-header span {
+  line-height: 18px;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.latest-deals {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
 }
 
 .ld-discount {
