@@ -46,9 +46,9 @@
     opacity: 0;
   }
   100% {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -82,7 +82,7 @@
   0% {
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
-    opacity:1;
+    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -94,13 +94,13 @@
 /* Mob Nav Entrance */
 @-webkit-keyframes mobNavEntrance {
   0% {
-    -webkit-transform:translateX(1000px);
-    transform:translateX(1000px);
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform:translateX(0);
-    transform:translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -193,7 +193,7 @@ h6 {
   height: 80px;
   transition: top 0.05s;
   z-index: 1000;
-  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  box-shadow: 0 0 32px rgba(0, 0 ,0 , 0.15);
   margin: 0;
   padding: 0;
 }
@@ -289,7 +289,7 @@ h6 {
 .black-drop-content::before {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 6px solid rgba(0,0,0,.9);
+  border-bottom: 6px solid rgba(0, 0, 0, 0.9);
   content: "";
   height: 0;
   left: 32px;
@@ -339,8 +339,7 @@ h6 {
   align-items: center;
   align-content: center;
   z-index: 10;
-  background-color: #f42;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
   will-change: height;
 }
 
@@ -831,7 +830,6 @@ h6 {
   background-image: url('../Assets/Img/ln-item08.jpg');
 }
 
-
 /* FUNDING SECTION */
 .funding-section {
   display: flex;
@@ -1158,7 +1156,7 @@ h6 {
   font-family: 'ARS Maquette Regular';
   font-size: 12px;
   line-height: 16px;
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .ts-popular-header h6:hover {
@@ -1481,7 +1479,6 @@ b {
 
 
 /* MEDIA QUERIES */
-
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
   /* NAVBAR */
@@ -1496,8 +1493,7 @@ b {
     display: inline-block;
     height: 80px;
     width: 121px;
-    background-color: #f42;
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
     margin: 0;
     padding: 0;
   }
@@ -1579,7 +1575,6 @@ b {
   .coverArt-container div:last-child header {
     width: 95%;
   }
-
 
   /* LATEST NEWS SECTION */
   .ln-item {
