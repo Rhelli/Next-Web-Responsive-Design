@@ -49,4 +49,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/Rhelli/NYT-Clone/tree/development/LICENSE.txt) licensed.
+This project is [MIT](https://github.com/Rhelli/Next-Web-Responsive-Design/tree/development/LICENSE.txt) licensed.
