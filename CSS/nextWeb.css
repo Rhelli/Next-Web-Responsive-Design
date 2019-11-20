@@ -1,7 +1,6 @@
 /* TNW Nav Logo Img Entrance */
-@-webkit-keyframes tnw-small {
-  0% 
-  {
+@-webkit-keyframes tnw-small-ent {
+  0% {
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
     opacity: 1;
@@ -13,7 +12,7 @@
   }
 }
 
-@keyframes tnw-small {
+@keyframes tnw-small-ent {
   0% {
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
