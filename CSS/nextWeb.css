@@ -128,17 +128,8 @@
 
 /* Mob Nav Exit */
 @-webkit-keyframes mobNavExit {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
+  0% {-webkit-transform: translateX(0); transform: translateX(0); opacity: 1;}
+  100% {-webkit-transform: translateX(1000px); transform: translateX(1000px); opacity: 0;}
 }
 
 @keyframes mobNavExit {
@@ -147,7 +138,7 @@
     transform: translateX(0);
     opacity: 1;
   }
-  
+
   100% {
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
@@ -1486,7 +1477,6 @@ b {
   color: #f42;
 }
 
-/* MEDIA QUERIES */
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
   /* NAVBAR */
