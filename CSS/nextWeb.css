@@ -1581,10 +1581,7 @@ b {
 .ts {
   flex: 0 0 50%;
   max-width: 50%;
-}   
-
-
-
+}
 
 .ld-discount {
   background-image: url(../Assets/Img/deals-ribbon.svg);
@@ -1995,7 +1992,6 @@ footer {
 .fCard-top div h5 {
   font-size: 11px;
 }
-
 
 .fStory ul {
   height: auto;
