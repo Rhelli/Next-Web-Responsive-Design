@@ -4,13 +4,12 @@
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
     opacity: 1;
-  }
+  } 
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
-
 }
 
 @keyframes tnw-small {
@@ -153,7 +152,7 @@
     transform: translateX(1000px);
     opacity: 0;
   }
-  
+
 }
 
 *,

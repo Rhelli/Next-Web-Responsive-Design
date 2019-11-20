@@ -106,5 +106,6 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
+    ignore: ["inside-block"],
   },
 }
