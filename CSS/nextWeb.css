@@ -335,7 +335,7 @@ p, h2, h3, h4, h5, h6 {
 }
 
 .clear-nav > div:nth-child(3):hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* Mobile Nav Disable */
