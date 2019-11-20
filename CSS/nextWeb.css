@@ -1476,10 +1476,7 @@ b {
   color: #f42;
 }
 
-<<<<<<< HEAD
-=======
 /* MEDIA QUERIES */
->>>>>>> a700344b6c8a302ec809b1ea94a26ccb5127eb1a
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
   /* NAVBAR */
