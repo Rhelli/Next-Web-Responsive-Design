@@ -1,6 +1,6 @@
 /* TNW Nav Logo Img Entrance */
 @-webkit-keyframes tnw-small {
-  0%{
+  0% {
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
     opacity: 1;
@@ -985,7 +985,7 @@ h6 {
   display: block;
   padding: 10.6px 16px 10.6px 84px;
   color: #000;
-  background: rgba(255, 68, 34, 0.08);
+  background: rgba(255, 68, 34, .08);
   margin: 0;
 }
 
@@ -1004,7 +1004,7 @@ h6 {
   font-size: 12px;
   font-family: 'Shentox', sans-serif;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   line-height: 1.5;
 }
 
@@ -1031,14 +1031,14 @@ h6 {
 }
 
 .fCard-invest a:not(:last-child) {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 .fCard-invest > a > i {
   display: block;
   font-size: 1.23em;
   position: absolute;
-  top: 0.2em;
+  top: .2em;
   left: 0;
   color: #000;
   opacity: 0.9;
@@ -1096,7 +1096,7 @@ h6 {
   color: #f42;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.015em;
+  letter-spacing: -.015em;
 }
 
 .ts-popular {
@@ -1135,7 +1135,7 @@ h6 {
   font-family: 'Shentox', Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   line-height: 1.5;
 }
 
@@ -1181,7 +1181,7 @@ h6 {
   font-family: 'Shentox', Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   line-height: 1.5;
 }
 
@@ -1748,7 +1748,7 @@ b {
     width: 100%;
     color: #aaa;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 300;  
   }
 
   /* LATEST DEALS SECTION */
