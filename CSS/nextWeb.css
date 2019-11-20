@@ -1547,13 +1547,22 @@ b {
   margin-bottom: 4em;
 }
 
+.funding-section header {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.funding-section header div:last-child {
+  margin: 10px auto 0 0;
+}
+
 .fCard-container > div {
   display: block;
   height: 100%;
   position: relative;
   flex: 1 0 33%;
   max-width: 33%;
-  padding: 12px;
+  padding: 10px;
 }
 
 .fCard4 .fStory {
@@ -1962,151 +1971,44 @@ footer {
 
 .fCard-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-end;
-  width: 100%;
-  height: auto;
-  margin-bottom: 4em;
+  flex-flow: column nowrap;
+  margin-bottom: 2em;
 }
 
 .fCard-container > div {
-  display: block;
-  height: 100%;
-  position: relative;
-  flex: 1 0 25%;
-  max-width: 25%;
-  padding: 12px;
-}
-
-.fStory {
-  background: #fffaf8;
-  width: 100%;
-  height: 100%;
-}
-
-.fStory a {
-  text-decoration: none;
-}
-
-.fCard-top {
-  display: block;
-  width: 100%;
-  position: relative;
-}
-
-.fCard-top img {
-  display: block;
-  width: 60px;
-  height: 60px;
-  margin: 10.6px;
-  position: absolute;
-  top: 0; left: 0;
-  z-index: 10;
-  border: none;
+  flex: 1 0 100%;
+  min-width: 100%;
+  padding: 8px;
 }
 
 .fCard-org {
-  width: 100%;
-  background-color: #f42;
-  color: #fff;
-  padding: 10.6px 16px 10.6px 84px;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.fCard-top div {
-  display: block;
-  padding: 10.6px 16px 10.6px 84px;
-  color: #000;
-  background: rgba(255, 68, 34, .08);
-  margin: 0;
+  font-size: 18px;
 }
 
 .fCard-top div h4 {
-  font-family: 'Avalon', sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  color: #000;
-  margin: 0;
 }
 
 .fCard-top div h5 {
-  color: #000;
-  opacity: .5;
-  font-size: 12px;
-  font-family: 'Shentox', sans-serif;
-  font-weight: 500;
-  letter-spacing: .04em;
-  line-height: 1.5;
+  font-size: 11px;
 }
 
-.fCard-invest {
-  padding: 16px;
-}
-
-.fCard-invest > a {
-  display: block;
-  line-height: 22px;
-  padding-left: 2em;
-  position: relative;
-  font-size: 13px;
-  color: #555;
-  margin-right: 1em;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.fCard-invest a:not(:last-child) {
-  margin-bottom: .5em;
-}
-
-.fCard-invest > a > i {
-  display: block;
-  font-size: 1.23em;
-  position: absolute;
-  top: .2em;
-  left: 0;
-  color: #000;
-  opacity: 0.9;
-}
 
 .fStory ul {
-  margin-top: 0;
-  border-top: 1px solid rgba(255, 68, 34, .25);
-  padding-top: 10px;
-  padding: 16px;
-  color: #555;
-  font-size: 12px;
-  line-height: 18px;
+  height: auto;
 }
 
 .fCard2 .fStory .fCard-byline {
-  height: 97px;
+  height: auto;
 }
 
 .fCard3 .fStory .fCard-byline {
-  height: 87px;
+  height: auto;
 }
 
-.fStory ul a {
-  text-decoration: none;
-  color: #555;
+.fCard4 .fStory {
+  display: block;
 }
-
-.fStory ul a span {
-  color: #aaa;
-}
-
 
 /* TOPICS SECTION */
 .ts {
