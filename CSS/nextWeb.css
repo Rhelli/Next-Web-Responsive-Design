@@ -66,7 +66,7 @@ p, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 80px;
   transition: top 0.05s;
-  z-index: 10;
+  z-index: 1000;
   box-shadow: 0 0 32px rgba(0,0,0,.15);
   margin: 0;
   padding: 0;
@@ -769,7 +769,7 @@ p, h2, h3, h4, h5, h6 {
   background-image: url('../Assets/Img/subtitle-arrow-black.svg');
 }
 
-.funding-section header div:last-child {
+.funding-section > header div:last-child {
   display: flex;
   width: auto;
   position: relative;
@@ -780,18 +780,18 @@ p, h2, h3, h4, h5, h6 {
   margin-left: auto;
 }
 
-.funding-section header div:last-child a {
+.funding-section > header div:last-child a {
   text-decoration: none;
   color: #f42;
   margin-right: 23px;
   line-height: 18px;
 }
 
-.funding-section header div:last-child a:hover {
+.funding-section > header div:last-child a:hover {
   color: #000;
 }
 
-.funding-section header div:last-child a::after {
+.funding-section > header div:last-child a::after {
   display: inline-block;
   content: "|";
   margin-left: 10px;
@@ -800,11 +800,11 @@ p, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-.funding-section header div:last-child a:hover::after {
+.funding-section > header div:last-child a:hover::after {
   color: #f42;
 }
 
-.funding-section header div:last-child a:last-child::after {
+.funding-section > header div:last-child a:last-child::after {
   content: "";
 }
 
@@ -820,7 +820,7 @@ p, h2, h3, h4, h5, h6 {
 }
 
 .fCard-container > div {
-  display: inline-block;
+  display: block;
   height: 100%;
   position: relative;
   flex: 1 0 25%;
@@ -909,6 +909,9 @@ p, h2, h3, h4, h5, h6 {
   color: #555;
   margin-right: 1em;
   text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .fCard-invest a:not(:last-child) {
@@ -933,6 +936,14 @@ p, h2, h3, h4, h5, h6 {
   color: #555;
   font-size: 12px;
   line-height: 18px;
+}
+
+.fCard2 .fStory .fCard-byline {
+  height: 97px;
+}
+
+.fCard3 .fStory .fCard-byline {
+  height: 87px;
 }
 
 .fStory ul a {
@@ -1005,7 +1016,7 @@ p, h2, h3, h4, h5, h6 {
 
 .ts-popular-header h5 {
   font-size: 13px;
-  font-family: Shentox,sans-serif;
+  font-family: "Shentox", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -1525,7 +1536,37 @@ b {
 }
 
 /* LATEST FUNDING SECTION */
+.fCard-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-end;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4em;
+}
 
+.fCard-container > div {
+  display: block;
+  height: 100%;
+  position: relative;
+  flex: 1 0 33%;
+  max-width: 33%;
+  padding: 12px;
+}
+
+.fCard4 .fStory {
+  display: none;
+}
+
+.fCard2 .fStory .fCard-byline {
+  height: 97px;
+}
+
+.fCard3 .fStory .fCard-byline {
+  height: 86px;
+}
 
 /* TOPICS SECTION */
 .ts {
@@ -1897,6 +1938,241 @@ footer {
 }
 
 /* LATEST FUNDING SECTION */
+.funding-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+}
+
+.funding-section header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  margin-left: 12px;
+}
+
+.funding-section header h2 a {
+  line-height: 32px;
+  color: #f42;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: 'Avalon', sans-serif;
+  text-decoration: none;
+}
+
+.funding-section header h2 a:hover {
+  color: #000;
+}
+
+.funding-section header h2 span::after {
+  background-image: url(../Assets/Img/download.svg);
+  background-size: 16px 16px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 0;
+  width: 16px;
+}
+
+.funding-section header h2:hover span::after {
+  background-image: url('../Assets/Img/subtitle-arrow-black.svg');
+}
+
+.funding-section > header div:last-child {
+  display: flex;
+  width: auto;
+  position: relative;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+}
+
+.funding-section > header div:last-child a {
+  text-decoration: none;
+  color: #f42;
+  margin-right: 23px;
+  line-height: 18px;
+}
+
+.funding-section > header div:last-child a:hover {
+  color: #000;
+}
+
+.funding-section > header div:last-child a::after {
+  display: inline-block;
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+  pointer-events: none;
+  position: absolute;
+}
+
+.funding-section > header div:last-child a:hover::after {
+  color: #f42;
+}
+
+.funding-section > header div:last-child a:last-child::after {
+  content: "";
+}
+
+.fCard-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-end;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4em;
+}
+
+.fCard-container > div {
+  display: block;
+  height: 100%;
+  position: relative;
+  flex: 1 0 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
+.fStory {
+  background: #fffaf8;
+  width: 100%;
+  height: 100%;
+}
+
+.fStory a {
+  text-decoration: none;
+}
+
+.fCard-top {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.fCard-top img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 10.6px;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 10;
+  border: none;
+}
+
+.fCard-org {
+  width: 100%;
+  background-color: #f42;
+  color: #fff;
+  padding: 10.6px 16px 10.6px 84px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fCard-top div {
+  display: block;
+  padding: 10.6px 16px 10.6px 84px;
+  color: #000;
+  background: rgba(255, 68, 34, .08);
+  margin: 0;
+}
+
+.fCard-top div h4 {
+  font-family: 'Avalon', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  margin: 0;
+}
+
+.fCard-top div h5 {
+  color: #000;
+  opacity: .5;
+  font-size: 12px;
+  font-family: 'Shentox', sans-serif;
+  font-weight: 500;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.fCard-invest {
+  padding: 16px;
+}
+
+.fCard-invest > a {
+  display: block;
+  line-height: 22px;
+  padding-left: 2em;
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  margin-right: 1em;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fCard-invest a:not(:last-child) {
+  margin-bottom: .5em;
+}
+
+.fCard-invest > a > i {
+  display: block;
+  font-size: 1.23em;
+  position: absolute;
+  top: .2em;
+  left: 0;
+  color: #000;
+  opacity: 0.9;
+}
+
+.fStory ul {
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 68, 34, .25);
+  padding-top: 10px;
+  padding: 16px;
+  color: #555;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fCard2 .fStory .fCard-byline {
+  height: 97px;
+}
+
+.fCard3 .fStory .fCard-byline {
+  height: 87px;
+}
+
+.fStory ul a {
+  text-decoration: none;
+  color: #555;
+}
+
+.fStory ul a span {
+  color: #aaa;
+}
 
 
 /* TOPICS SECTION */
