@@ -449,7 +449,7 @@ h6 {
   margin-left: auto;
   padding: 10px 0 0 15px;
   border-left: 1px solid #d0d0d0;
-  float: left
+  float: left;
 }
 
 .clear-nav > div:nth-child(3) a i {
@@ -968,7 +968,8 @@ h6 {
   height: 60px;
   margin: 10.6px;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   z-index: 10;
   border: none;
 }
@@ -1496,7 +1497,6 @@ b {
 
 /* Laptops & Other Large Devices */
 @media screen and  (max-width: 1024px) {
-
   /* NAVBAR */
   #navbar {
     flex-flow: row nowrap;
@@ -1729,7 +1729,7 @@ b {
     width: 100%;
     color: #aaa;
     font-size: 13px;
-    font-weight: 300;  
+    font-weight: 300;
   }
 
   /* LATEST DEALS SECTION */
@@ -1745,7 +1745,6 @@ b {
 
 /* Tablets & Medium Devices */
 @media screen and (max-width: 768px) {
-
   /* NAVBAR */
   #navbar {
     flex-flow: row nowrap;
