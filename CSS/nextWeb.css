@@ -697,23 +697,23 @@ h6 {
 }
 
 .ln-item:nth-child(3) div a {
-  background-image: url('../Assets/Img/ln-item03.jpg');  
+  background-image: url('../Assets/Img/ln-item03.jpg');
 }
 
 .ln-item:nth-child(4) div a {
-  background-image: url('../Assets/Img/ln-item04.jpg');  
+  background-image: url('../Assets/Img/ln-item04.jpg');
 }
 
 .ln-item:nth-child(5) div a {
-  background-image: url('../Assets/Img/ln-item05.jpg');  
+  background-image: url('../Assets/Img/ln-item05.jpg');
 }
 
 .ln-item:nth-child(6) div a {
-  background-image: url('../Assets/Img/ln-item06.png');  
+  background-image: url('../Assets/Img/ln-item06.png');
 }
 
 .ln-item:nth-child(7) div a {
-  background-image: url('../Assets/Img/ln-item07.jpg');  
+  background-image: url('../Assets/Img/ln-item07.jpg');
 }
 
 .ln-item:last-child div a {
