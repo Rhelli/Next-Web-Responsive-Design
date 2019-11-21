@@ -32,19 +32,19 @@ Our project can be found at https://github.com/Rhelli/Next-Web-Responsive-Design
 
 
 ****
-
+****
 
 #### Medium Animation
 <a href="/Assets/Img/animation-medium.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-medium.gif"/> </a>
 
-
+****
 ****
 
 
 #### Small Animation
 <a href="/Assets/Img/animation-small.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-small.gif"/> </a>
 
-
+****
 ****
 
 ## 🤝 Contributing
